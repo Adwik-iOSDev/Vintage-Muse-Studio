@@ -15,16 +15,28 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
+				README.md,
 			);
 			target = 9C6F4CB02FD7F982001C434C /* Vintage Muse Studio */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		9C6F4CFC2FD8515D001C434C /* Exceptions for "Vintage Muse Studio" folder in "Compile Sources" phase from "Vintage Muse Studio" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 9C6F4CAD2FD7F982001C434C /* Sources */;
+			membershipExceptions = (
+				README.md,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		9C6F4CB32FD7F982001C434C /* Vintage Muse Studio */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				9C6F4CC32FD7F984001C434C /* Exceptions for "Vintage Muse Studio" folder in "Vintage Muse Studio" target */,
+				9C6F4CFC2FD8515D001C434C /* Exceptions for "Vintage Muse Studio" folder in "Compile Sources" phase from "Vintage Muse Studio" target */,
 			);
 			path = "Vintage Muse Studio";
 			sourceTree = "<group>";
@@ -148,6 +160,7 @@
 				DEVELOPMENT_TEAM = JD3MX6K8P9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Vintage Muse Studio/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "VM Studio";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -180,6 +193,7 @@
 				DEVELOPMENT_TEAM = JD3MX6K8P9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Vintage Muse Studio/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "VM Studio";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
