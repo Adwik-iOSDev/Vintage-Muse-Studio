@@ -6,8 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2E6903316310B08E296D4762 /* Pods_Vintage_Muse_Studio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A7E2C1BF050A7FD568E2876 /* Pods_Vintage_Muse_Studio.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		7A7E2C1BF050A7FD568E2876 /* Pods_Vintage_Muse_Studio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vintage_Muse_Studio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8126ACD649D8929160E01689 /* Pods-Vintage Muse Studio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vintage Muse Studio.debug.xcconfig"; path = "Target Support Files/Pods-Vintage Muse Studio/Pods-Vintage Muse Studio.debug.xcconfig"; sourceTree = "<group>"; };
 		9C6F4CB12FD7F982001C434C /* Vintage Muse Studio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vintage Muse Studio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C86E69C47D0BE52785785D54 /* Pods-Vintage Muse Studio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vintage Muse Studio.release.xcconfig"; path = "Target Support Files/Pods-Vintage Muse Studio/Pods-Vintage Muse Studio.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -48,17 +55,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E6903316310B08E296D4762 /* Pods_Vintage_Muse_Studio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AB1B0C35794C015A29FD48E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8126ACD649D8929160E01689 /* Pods-Vintage Muse Studio.debug.xcconfig */,
+				C86E69C47D0BE52785785D54 /* Pods-Vintage Muse Studio.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9C6F4CA82FD7F982001C434C = {
 			isa = PBXGroup;
 			children = (
 				9C6F4CB32FD7F982001C434C /* Vintage Muse Studio */,
 				9C6F4CB22FD7F982001C434C /* Products */,
+				0AB1B0C35794C015A29FD48E /* Pods */,
+				B6C31A2A9054E1F2BEC967B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +89,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		B6C31A2A9054E1F2BEC967B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A7E2C1BF050A7FD568E2876 /* Pods_Vintage_Muse_Studio.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C6F4CC42FD7F984001C434C /* Build configuration list for PBXNativeTarget "Vintage Muse Studio" */;
 			buildPhases = (
+				1EFBB6F310EDD7CD917B0F74 /* [CP] Check Pods Manifest.lock */,
 				9C6F4CAD2FD7F982001C434C /* Sources */,
 				9C6F4CAE2FD7F982001C434C /* Frameworks */,
 				9C6F4CAF2FD7F982001C434C /* Resources */,
+				CECCEDE69D88AA845294B35E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -89,8 +118,6 @@
 				9C6F4CB32FD7F982001C434C /* Vintage Muse Studio */,
 			);
 			name = "Vintage Muse Studio";
-			packageProductDependencies = (
-			);
 			productName = "Vintage Muse Studio";
 			productReference = 9C6F4CB12FD7F982001C434C /* Vintage Muse Studio.app */;
 			productType = "com.apple.product-type.application";
@@ -139,6 +166,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1EFBB6F310EDD7CD917B0F74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Vintage Muse Studio-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CECCEDE69D88AA845294B35E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Vintage Muse Studio/Pods-Vintage Muse Studio-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Vintage Muse Studio/Pods-Vintage Muse Studio-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Vintage Muse Studio/Pods-Vintage Muse Studio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9C6F4CAD2FD7F982001C434C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -152,16 +225,19 @@
 /* Begin XCBuildConfiguration section */
 		9C6F4CC52FD7F984001C434C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8126ACD649D8929160E01689 /* Pods-Vintage Muse Studio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JD3MX6K8P9;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Vintage Muse Studio/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "VM Studio";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -185,16 +261,19 @@
 		};
 		9C6F4CC62FD7F984001C434C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C86E69C47D0BE52785785D54 /* Pods-Vintage Muse Studio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JD3MX6K8P9;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Vintage Muse Studio/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "VM Studio";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
