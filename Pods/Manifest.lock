@@ -1,16 +1,22 @@
 PODS:
+  - SwiftMessages (10.0.2):
+    - SwiftMessages/App (= 10.0.2)
+  - SwiftMessages/App (10.0.2)
   - SwiftyGif (5.4.5)
 
 DEPENDENCIES:
+  - SwiftMessages
   - SwiftyGif
 
 SPEC REPOS:
   trunk:
+    - SwiftMessages
     - SwiftyGif
 
 SPEC CHECKSUMS:
+  SwiftMessages: bfefe945bc05ce7cd328303d53d0d1849e29109d
   SwiftyGif: 706c60cf65fa2bc5ee0313beece843c8eb8194d4
 
-PODFILE CHECKSUM: 0bd1963d6d6384e9ebda0e1a9876f95eca09ba25
+PODFILE CHECKSUM: f65ac8ab1783b5f6592c5f33d7922d48ac70ef73
 
 COCOAPODS: 1.16.2

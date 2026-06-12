@@ -3,83 +3,283 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 71;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0277B4DF47A8413385B09EC6BFBFD821 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 36D20D7F9B5F1584044B1759C855D9F6 /* PrivacyInfo.xcprivacy */; };
-		0ABF927E9C3D6229823AEC42F16356E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		21522E8BAAE97772E92F3943202B758C /* SwiftyGif-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BC95A7132B292D873124EC5498F115D1 /* SwiftyGif-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		44A92BD6A7CC8DE76494A085164FE472 /* NSImage+SwiftyGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A58262904F5EF3EF28B4CE8AADAA5C /* NSImage+SwiftyGif.swift */; };
-		5D043141CC2DA5DF01D3FF3BFFCBAA7F /* UIImageView+SwiftyGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E826DAD5C574D49073D431A95A52C55 /* UIImageView+SwiftyGif.swift */; };
-		6A72B739D52D83ECFF7E96AFF26AB577 /* UIImage+SwiftyGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE22B8A6B950B0F58966CCA3DDF1EFB4 /* UIImage+SwiftyGif.swift */; };
-		8FA6BAA0F5B077305B5C5FB6F2BD2886 /* Pods-Vintage Muse Studio-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D63A07657126995DA6F639E62BFE7F17 /* Pods-Vintage Muse Studio-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		999253842B8244633FEF4EADCF8B7B9A /* SwiftyGif-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B81A043A179AEAA591C4C0CE9304AC6B /* SwiftyGif-dummy.m */; };
-		9D45243582C808F6F88C78F4540CC4B9 /* ObjcAssociatedWeakObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15C1FCF35738937CD215F8532323B0F /* ObjcAssociatedWeakObject.swift */; };
-		A4659B725777EB2731C4F056A59BE83D /* SwiftyGif.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F6F772805253D38FD3B9178D6B01701 /* SwiftyGif.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C9B2111B50CAB17C92CC286E436CF3FF /* NSImageView+SwiftyGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C212D7FC2A0DC6301076388CF132D05 /* NSImageView+SwiftyGif.swift */; };
-		DC908C9A26F3C8CF4B4C848F4B97E1BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		DE20025E65378775662C9C32D18A931F /* SwiftyGifManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498A419029269A2B3F1A9516698669DA /* SwiftyGifManager.swift */; };
-		E1AFDD57F2807AC2B77AAE433832660E /* Pods-Vintage Muse Studio-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2E86E033911726C9F0B5991F9F6B3F /* Pods-Vintage Muse Studio-dummy.m */; };
-		F41CA210E56B3043EDD75C851FB4061B /* SwiftyGif.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A37DE9A55F6CEA1AF18BDEF878BF1F5 /* SwiftyGif.bundle */; };
+		01BB07B05EEC9B39EF758376B6C476EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */; };
+		033397553E82DCE05EEAF16E5C6D1BAF /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45030BF79AFB5E509B88103AAFD43B5 /* UIViewController+Extensions.swift */; };
+		047AF9FFC883924930EF7C90D1D80C69 /* warningIconLight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33E53FDBB7EBD54229F0F9A1A367EF35 /* warningIconLight@2x.png */; };
+		04C20BBE9A50AE27E0921930B03FEE30 /* KeyboardTrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FF304B78FB2887EEA69B43A3EF73EE /* KeyboardTrackingView.swift */; };
+		0639835EA8A4936187EFCB52F1723BF2 /* successIconSubtle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E1E1D45CA552D276CE65737420C73E2 /* successIconSubtle@2x.png */; };
+		06BA2E2D825572F38EBB22253A0B979F /* SwiftMessages-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 719E4F9EFC363A0B567AE09EFCA3566C /* SwiftMessages-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0ABF927E9C3D6229823AEC42F16356E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */; };
+		0AF6193D3270DD4A81C8A79322F6637A /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EB3AF39F0437FEAA8CCE4705E49661 /* Weak.swift */; };
+		0FBEA463D09632D1801735D8459F0E67 /* errorIconSubtle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C043144845BED20AA26E80F98FED2D0 /* errorIconSubtle@3x.png */; };
+		0FC19D57FD3A5502638CC9A2BD78F808 /* errorIconLight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBA76C49967940CAF6D785C33B5A1E9B /* errorIconLight@3x.png */; };
+		0FC9C58F87D03F8CDE5AB079C1DD0213 /* NSLayoutConstraint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D341EB33A63E4F30A4B5AA6F4277BD /* NSLayoutConstraint+Extensions.swift */; };
+		10F93A767082F8F6A1923036A34AE676 /* WindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613A3FEC70BA3A562340D6224D96A69D /* WindowViewController.swift */; };
+		11E99F4924666EA2BCB9B935CD259DDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */; };
+		1584E1A442001E6A1D8D86A768274BF1 /* SwiftMessages-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B61DB639058770927AD33DAE4CD18CDD /* SwiftMessages-dummy.m */; };
+		1812F8B843BD735B9DF751BD5A5785DE /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A998C1D73206815934177C52109917 /* Presenter.swift */; };
+		1B76747CC341A49520A5979F19E1A34F /* successIconLight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09E36AFCE14306AB856531AE9EC2EA9C /* successIconLight@3x.png */; };
+		1D2E46BDCB115733447065A3636FE866 /* CALayer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF92F1677B99B5AFF63B75F844038CA /* CALayer+Extensions.swift */; };
+		1E99C7FFCAFA045A6CFDFFE2B881597E /* AccessibleMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C219547C2EB01CFCE2DA31B63BE62932 /* AccessibleMessage.swift */; };
+		1EFE4704002D12F55080679BCDB9A7EA /* errorIconSubtle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E71C38F96597F4D768DEA3098769084 /* errorIconSubtle@2x.png */; };
+		21522E8BAAE97772E92F3943202B758C /* SwiftyGif-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC864457AD7A71C89237520D141DF714 /* SwiftyGif-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		268E803AB07D4212E963979D1B76809A /* SwiftMessagesHideAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BCD9FB43513F065B30706B62A82655 /* SwiftMessagesHideAction.swift */; };
+		29BF075E733C0DC5F7C33F51D38A0F56 /* PhysicsPanHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15C0F38A4830988B0701AC2EF4B93BC /* PhysicsPanHandler.swift */; };
+		2B792C407028E5BAED835328B44BDC08 /* UIEdgeInsets+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AE2E896065FB1E4F9A2E62D8050C85 /* UIEdgeInsets+Extensions.swift */; };
+		2EB4C1821BCB3FFDCC0BED4D218DF7D9 /* successIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7BD52FDCB7458FC55F5EAC03159B141 /* successIcon.png */; };
+		302E71229689227ED183D465D75F58C5 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3B73A64978815D955590444C06CCD5 /* MessageView.swift */; };
+		306722CB2D12112BFDAF2A763D6C9E86 /* SwiftMessages.Config+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BD0A3FDD7F8389E9A41C6E3E2A16F1 /* SwiftMessages.Config+Extensions.swift */; };
+		31E90A063CEB408AE83BAE3809C5B386 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677FC6C6315085B6AC3DEE1AE717C810 /* BaseView.swift */; };
+		331F3DC3BCF4B5368602A0F5165912AA /* MessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E0DDB6EC5D99A7C0EBB9598F2CB35EE /* MessageView.xib */; };
+		33F65190AE430461BEF5CAAD54483FD5 /* MessageGeometryProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796FA6766897E8906242A79682905F1A /* MessageGeometryProxy.swift */; };
+		34CBE9ECAF6DFF53EAB165C5EAAD7A10 /* HapticMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473EF1AFA2E5A38AFCA05BE35101BBA8 /* HapticMessage.swift */; };
+		364E89785D155601C5FF763DACBB3CC2 /* successIconLight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 820489E1CB13F8D7A3D0FAED96192DD0 /* successIconLight@2x.png */; };
+		39200C0C522827ED94BC66AF2510BD07 /* infoIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = ABA5E6921E5EB44F809E3868B4EB0535 /* infoIcon.png */; };
+		396476ABD6A88B36454BFB75187F2CEB /* Pods-Vintage Muse Studio-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D63A07657126995DA6F639E62BFE7F17 /* Pods-Vintage Muse Studio-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		397B143C4CF3F45C43BE4E788EE8F211 /* MarginAdjustable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80913CB14C07FC058D5985B24FC9FB /* MarginAdjustable.swift */; };
+		3E886BFC002E3947673FEDA3451D6F86 /* PhysicsAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322BEFC09DE269C13508A4E39E7E4787 /* PhysicsAnimation.swift */; };
+		4270955B71197EF9294A397E0404DBCD /* Task+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65B7F29BD1836005824168ADAF76A50 /* Task+Extensions.swift */; };
+		44108836B43DCE0DD8495F8C1DDEAC72 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89D4BB747A29937E2911EB2D3715F59 /* Error.swift */; };
+		44A92BD6A7CC8DE76494A085164FE472 /* NSImage+SwiftyGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5B96636C33FC2B35368F26FBC75F26 /* NSImage+SwiftyGif.swift */; };
+		45024175A5927B5FFE3256B9385E6197 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3C9A6372061769D81A73C0C7FAA38C /* Animator.swift */; };
+		45624DD886962A972EDDA3B49D41B8B6 /* infoIconSubtle.png in Resources */ = {isa = PBXBuildFile; fileRef = E83C0B965A3309027270A1D5266C8AFA /* infoIconSubtle.png */; };
+		469B23924311CD64958A584C88613055 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09C3DC18340021AC9640A85F775B4836 /* CardView.xib */; };
+		49122DDE2FB70552AFD9B388204A798D /* MarginAdjustable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE240DAD21323BBD187EFD0EF52D26C /* MarginAdjustable+Extensions.swift */; };
+		4C43D3B59A0B58EDDE2620EEEA49CC55 /* errorIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 787C5FA7E7B46CD0CE5DD3BBE70D7A38 /* errorIcon@2x.png */; };
+		4D77F3CF371BE21B7485E343D998DCE1 /* UIWindow+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F825DA1AE00E8FD20887D39B05078 /* UIWindow+Extensions.swift */; };
+		53CADF45EA290246B125DB13A58A60B7 /* infoIconLight.png in Resources */ = {isa = PBXBuildFile; fileRef = F20D8E546C0FC721878AA6A89436C61D /* infoIconLight.png */; };
+		5630FEBC55B184AAC58EF386A896B749 /* infoIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85C3D3F100C15879200E2A8F6B8E712D /* infoIcon@2x.png */; };
+		580DB52AED21848F8315A1F4E4BDCFBD /* warningIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BE7A17078DD54B8274772886305C4B66 /* warningIcon.png */; };
+		5AD722F911FC944619CD09A5F9350645 /* successIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 996D8D334117D846A76DAE2E7C6B2E82 /* successIcon@3x.png */; };
+		5B0C549F86E1E6B21A579BBAF40A6A17 /* warningIconLight.png in Resources */ = {isa = PBXBuildFile; fileRef = 685AFF8F0D8CC714424434FAFB5FF031 /* warningIconLight.png */; };
+		5CA8C87965AD4DECE642BE230F2CA28E /* SwiftMessages-SwiftMessages in Resources */ = {isa = PBXBuildFile; fileRef = 753DD909979478A0C1B33E0524504EF1 /* SwiftMessages-SwiftMessages */; };
+		5D043141CC2DA5DF01D3FF3BFFCBAA7F /* UIImageView+SwiftyGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B28E42AF7CF057DF18A1916CFBD5965 /* UIImageView+SwiftyGif.swift */; };
+		649C97B5FF3C329FC5577FB65BB3D72F /* errorIconLight.png in Resources */ = {isa = PBXBuildFile; fileRef = 25C96E89D5F47E8131A5A217C88A2EEF /* errorIconLight.png */; };
+		6822947598A19C0C2A4093C6F9F80F69 /* MaskingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD11E999AED2472361E23D2E8863B12 /* MaskingView.swift */; };
+		68C64A64C51584233D163A088788B52A /* successIconLight.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BF17D8B372544D206F8F436E439B875 /* successIconLight.png */; };
+		69C68EFC5E245B0FDD49F284BFE8CD25 /* infoIconSubtle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 643B1B6DBD5798D69CBBE6F56F3D1BA1 /* infoIconSubtle@2x.png */; };
+		6A72B739D52D83ECFF7E96AFF26AB577 /* UIImage+SwiftyGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = C479D2427ED4D92249155CBA11DF99BB /* UIImage+SwiftyGif.swift */; };
+		6DB519F92160E36F59C207DAE4052699 /* errorIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D26FC95B55925ACABFA26F602BD5EA2 /* errorIcon.png */; };
+		705952F1916FE6AD26D1B086A69C25EE /* TabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7B61E6C2444BC2B4D658BC058549C74 /* TabView.xib */; };
+		73F34435AD4AC005402A745DB737D48F /* warningIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 059BD4F45DE579E7A119FDFAA8986BE0 /* warningIcon@2x.png */; };
+		758AC96F47C03D7988E48E183E4E2740 /* BackgroundViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D429C8A61534FDCC5792408AD5476AAB /* BackgroundViewable.swift */; };
+		79AC62C9135622E025354E2505EA2573 /* infoIconLight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C372D2156D3949362471C8D785AE5C46 /* infoIconLight@2x.png */; };
+		7BFD462FFABFDF7E31A2B6A37CB83BA5 /* errorIconSubtle.png in Resources */ = {isa = PBXBuildFile; fileRef = F4858CE67F4503FB62B633F57C50376B /* errorIconSubtle.png */; };
+		7F7B426002EF1D0F664466AFAE6E9A7B /* errorIconLight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 824B921B99C829CA34FAE8BBC72CB6CC /* errorIconLight@2x.png */; };
+		7FE45D0F9A4E1272A7E26B0369B6ECE1 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 3380483A99BD8BE1DC7B7704F9121EC3 /* PrivacyInfo.xcprivacy */; };
+		7FF1C43B1595A1D15C0A70CED6257B16 /* MessageViewConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F36B93F4C055762CE7F6665385A4EAD /* MessageViewConvertible.swift */; };
+		82C28B47209BD30A939E5A8588A515FD /* successIconSubtle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E07FD5A70B5A89557E0AB8FD97360AB /* successIconSubtle@3x.png */; };
+		870492923EA080DFF20EE971C5A8B79E /* StatusLine.xib in Resources */ = {isa = PBXBuildFile; fileRef = 741291A834820A06E8587299425ED6A4 /* StatusLine.xib */; };
+		882EB80B3F0E455F03BF5235FB9B7FCF /* infoIconLight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11BA4545CCCBBBB5A09BB4C97A7D0FC8 /* infoIconLight@3x.png */; };
+		8D59FE1A96373EA64228D3E84049757F /* PassthroughWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740D0B050EDC7AACB8B402E400D27641 /* PassthroughWindow.swift */; };
+		906A92572EC622242F492DDEACFBBE07 /* warningIconSubtle.png in Resources */ = {isa = PBXBuildFile; fileRef = 34581C8FED582640931C5859079255C7 /* warningIconSubtle.png */; };
+		97F06EC9CCEA5AD5A9785F67FEF2D28A /* infoIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5A7345CD3DBA379C66DA815F3D84DA4 /* infoIcon@3x.png */; };
+		999253842B8244633FEF4EADCF8B7B9A /* SwiftyGif-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABC245CFF2FD6DEB0378776C9C06C3 /* SwiftyGif-dummy.m */; };
+		9D45243582C808F6F88C78F4540CC4B9 /* ObjcAssociatedWeakObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05DF8A37FBF9A7CBE97A65B56EBE2DD /* ObjcAssociatedWeakObject.swift */; };
+		A086B064165E7AB8AE012BF063688DF5 /* CenteredView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 270889664B4E7DA067D979DC52AED57D /* CenteredView.xib */; };
+		A2CECE358FE5AA01EB3098285AFD1F56 /* warningIconLight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8942206ECD4B21B933743311DF24C8E9 /* warningIconLight@3x.png */; };
+		A4659B725777EB2731C4F056A59BE83D /* SwiftyGif.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DEB69A266822AB5A7919068EDD76701 /* SwiftyGif.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A51558103E0E778B8CB118E2B052805C /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE136E27A9693AE0CDB3941CB5B6F7B /* Identifiable.swift */; };
+		A5789601AF7EA77F6B60E91AFCB655BA /* warningIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CE6FEFD1FF586685A82229688C8C448 /* warningIcon@3x.png */; };
+		AA9627A1AACD43AFE2B77FED5318F7DB /* PassthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0273B3D5720A784FEC51EF375A54D538 /* PassthroughView.swift */; };
+		ADB23C53C60CE91AA3320DF32F47E5BF /* infoIconSubtle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2475A31E8B47F9EEA677953C74CAEEBC /* infoIconSubtle@3x.png */; };
+		ADC74D07E8B0E625116DAD8D8E6B4AF3 /* warningIconSubtle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B664133F2042DBC1B08B61F482B615BA /* warningIconSubtle@3x.png */; };
+		B0B5DB6A2BA8CD379EA52694491B3A0D /* TopBottomAnimationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99316B210C831BD34DB0BD3655A72A6E /* TopBottomAnimationStyle.swift */; };
+		B1F5B390417C6C5064AC5A1AE42A409A /* SwiftMessagesSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2039C478CD444C75449E74D453CE26F /* SwiftMessagesSegue.swift */; };
+		B54D5055E974B9070E089D0B0D30B681 /* Pods-Vintage Muse Studio-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2E86E033911726C9F0B5991F9F6B3F /* Pods-Vintage Muse Studio-dummy.m */; };
+		B83E3437DD0D0C34DFB3E4F1C73EDBF0 /* successIconSubtle.png in Resources */ = {isa = PBXBuildFile; fileRef = BF1B85A0C33043C70740DA9B98B5303E /* successIconSubtle.png */; };
+		C82BE31B642A1FD9E1FC12CDC6806354 /* errorIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28EDC623FA0B1E842BE8933C6E4AF777 /* errorIcon@3x.png */; };
+		C9B2111B50CAB17C92CC286E436CF3FF /* NSImageView+SwiftyGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B15229AA04C071F75C371A5188DB50D /* NSImageView+SwiftyGif.swift */; };
+		CA7298ECE5DB16604F50E5202A155560 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1173E493672273B68739D6F7ADE9BCB8 /* Theme.swift */; };
+		CFDA0B4410B8AD610C29B52599EC3498 /* TopBottomAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D08C16A11A6925678A10AEF571849C /* TopBottomAnimation.swift */; };
+		DE20025E65378775662C9C32D18A931F /* SwiftyGifManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D72FF12FEB0DFBE1038ADDF81499F2 /* SwiftyGifManager.swift */; };
+		DEE74AE99865A3A3DE242F37497D16D3 /* NSBundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4299EC91003767D008B6F69E22BC5C /* NSBundle+Extensions.swift */; };
+		E1B21BB1B19111F3D81D0C90C45BF272 /* SwiftMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D33CC4A2EC85B0944B9F68B474547C7 /* SwiftMessages.swift */; };
+		E22CEF4E660703F8EDF447747B210C69 /* CornerRoundingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B014E062EF3DF6B590B477ED8A4125D /* CornerRoundingView.swift */; };
+		E5837D8F815F8B8F81AB3428DD27140C /* successIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EBB3C0A063376C8F851744231E2A9B3 /* successIcon@2x.png */; };
+		E65DE0B2E0FDD9C454B3699820873C69 /* WindowScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB95ADED33DC757E955E89B3DD7B8A0 /* WindowScene.swift */; };
+		EC90441B7E4272E47823835C80C3C3D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF4CA3AF5536D14B4E015504E7AEEC0 /* UIKit.framework */; };
+		F3E595C6B35FBE5BE1F7CAD86210186A /* TopBottomPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC3D4945B35E90A9C98E53A9F367E36 /* TopBottomPresentable.swift */; };
+		F41CA210E56B3043EDD75C851FB4061B /* SwiftyGif-SwiftyGif in Resources */ = {isa = PBXBuildFile; fileRef = 0A37DE9A55F6CEA1AF18BDEF878BF1F5 /* SwiftyGif-SwiftyGif */; };
+		F9B51AA4C58F13386E86A36A9D3C3762 /* warningIconSubtle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1062F6BC5D5652D0CCD5C7C6BF95E006 /* warningIconSubtle@2x.png */; };
+		FA78B4A449A5A811B2DB9D0618C76353 /* MessageHostingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC0483044C9CD2692C5F47DD4789433 /* MessageHostingView.swift */; };
+		FA9C54C15301EDED7FB34B879B905D55 /* SwiftMessageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B295CE59FD6BB41A0357935B2C2477BD /* SwiftMessageModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C8DACF1418A1924D2B4184AD89292F24 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 15AEBAFA43912F898FC2E1A73025C946;
-			remoteInfo = SwiftyGif;
-		};
-		FAB29805E9C7628E4C16B6D3C0107047 /* PBXContainerItemProxy */ = {
+		34B09668FAE07DA7F722C897FD57770D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 176E48377247D5011E906CB1A39E71BA;
 			remoteInfo = "SwiftyGif-SwiftyGif";
 		};
+		43FE250FF317D5C4C5C55CE7621913E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93789445511E3FEAB3D09A6F552EEE2D;
+			remoteInfo = "SwiftMessages-SwiftMessages";
+		};
+		938DDD357CF4BCF408D1B84256DBE8EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15AEBAFA43912F898FC2E1A73025C946;
+			remoteInfo = SwiftyGif;
+		};
+		983A1F31E4D3971DECBF2D9847B681BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAB613A18652334F6BFC5F27BADF515D;
+			remoteInfo = SwiftMessages;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A37DE9A55F6CEA1AF18BDEF878BF1F5 /* SwiftyGif.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyGif.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E826DAD5C574D49073D431A95A52C55 /* UIImageView+SwiftyGif.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+SwiftyGif.swift"; path = "SwiftyGif/UIImageView+SwiftyGif.swift"; sourceTree = "<group>"; };
-		34093780EFED0B839E8EF963D8F85403 /* SwiftyGif.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyGif.release.xcconfig; sourceTree = "<group>"; };
-		35D457472BA4D8FF31511446ECA7018C /* SwiftyGif.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyGif.modulemap; sourceTree = "<group>"; };
-		36D20D7F9B5F1584044B1759C855D9F6 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = SwiftyGif/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		019BCB19FE2371E222B69D6D894AF233 /* SwiftMessages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftMessages.debug.xcconfig; sourceTree = "<group>"; };
+		02155834E6EB536D938699FA9A693373 /* SwiftyGif-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyGif-prefix.pch"; sourceTree = "<group>"; };
+		0273B3D5720A784FEC51EF375A54D538 /* PassthroughView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PassthroughView.swift; path = SwiftMessages/PassthroughView.swift; sourceTree = "<group>"; };
+		03FF304B78FB2887EEA69B43A3EF73EE /* KeyboardTrackingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardTrackingView.swift; path = SwiftMessages/KeyboardTrackingView.swift; sourceTree = "<group>"; };
+		059BD4F45DE579E7A119FDFAA8986BE0 /* warningIcon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "warningIcon@2x.png"; path = "SwiftMessages/Resources/warningIcon@2x.png"; sourceTree = "<group>"; };
+		09C3DC18340021AC9640A85F775B4836 /* CardView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CardView.xib; path = SwiftMessages/Resources/CardView.xib; sourceTree = "<group>"; };
+		09E36AFCE14306AB856531AE9EC2EA9C /* successIconLight@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "successIconLight@3x.png"; path = "SwiftMessages/Resources/successIconLight@3x.png"; sourceTree = "<group>"; };
+		0A37DE9A55F6CEA1AF18BDEF878BF1F5 /* SwiftyGif-SwiftyGif */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "SwiftyGif-SwiftyGif"; path = SwiftyGif.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C043144845BED20AA26E80F98FED2D0 /* errorIconSubtle@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "errorIconSubtle@3x.png"; path = "SwiftMessages/Resources/errorIconSubtle@3x.png"; sourceTree = "<group>"; };
+		0EBB3C0A063376C8F851744231E2A9B3 /* successIcon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "successIcon@2x.png"; path = "SwiftMessages/Resources/successIcon@2x.png"; sourceTree = "<group>"; };
+		0F36B93F4C055762CE7F6665385A4EAD /* MessageViewConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageViewConvertible.swift; path = SwiftMessages/MessageViewConvertible.swift; sourceTree = "<group>"; };
+		0F3C9A6372061769D81A73C0C7FAA38C /* Animator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animator.swift; path = SwiftMessages/Animator.swift; sourceTree = "<group>"; };
+		1062F6BC5D5652D0CCD5C7C6BF95E006 /* warningIconSubtle@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "warningIconSubtle@2x.png"; path = "SwiftMessages/Resources/warningIconSubtle@2x.png"; sourceTree = "<group>"; };
+		1173E493672273B68739D6F7ADE9BCB8 /* Theme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Theme.swift; path = SwiftMessages/Theme.swift; sourceTree = "<group>"; };
+		11BA4545CCCBBBB5A09BB4C97A7D0FC8 /* infoIconLight@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "infoIconLight@3x.png"; path = "SwiftMessages/Resources/infoIconLight@3x.png"; sourceTree = "<group>"; };
+		16A998C1D73206815934177C52109917 /* Presenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Presenter.swift; path = SwiftMessages/Presenter.swift; sourceTree = "<group>"; };
+		2475A31E8B47F9EEA677953C74CAEEBC /* infoIconSubtle@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "infoIconSubtle@3x.png"; path = "SwiftMessages/Resources/infoIconSubtle@3x.png"; sourceTree = "<group>"; };
+		25C96E89D5F47E8131A5A217C88A2EEF /* errorIconLight.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = errorIconLight.png; path = SwiftMessages/Resources/errorIconLight.png; sourceTree = "<group>"; };
+		270889664B4E7DA067D979DC52AED57D /* CenteredView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CenteredView.xib; path = SwiftMessages/Resources/CenteredView.xib; sourceTree = "<group>"; };
+		28EDC623FA0B1E842BE8933C6E4AF777 /* errorIcon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "errorIcon@3x.png"; path = "SwiftMessages/Resources/errorIcon@3x.png"; sourceTree = "<group>"; };
+		2DEB69A266822AB5A7919068EDD76701 /* SwiftyGif.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftyGif.h; path = SwiftyGif/SwiftyGif.h; sourceTree = "<group>"; };
+		2E0DDB6EC5D99A7C0EBB9598F2CB35EE /* MessageView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = MessageView.xib; path = SwiftMessages/Resources/MessageView.xib; sourceTree = "<group>"; };
+		2FF1BB4224A157FC185F8E5F7AD96060 /* SwiftyGif-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyGif-Info.plist"; sourceTree = "<group>"; };
+		322BEFC09DE269C13508A4E39E7E4787 /* PhysicsAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhysicsAnimation.swift; path = SwiftMessages/PhysicsAnimation.swift; sourceTree = "<group>"; };
+		3380483A99BD8BE1DC7B7704F9121EC3 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = SwiftyGif/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		33E53FDBB7EBD54229F0F9A1A367EF35 /* warningIconLight@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "warningIconLight@2x.png"; path = "SwiftMessages/Resources/warningIconLight@2x.png"; sourceTree = "<group>"; };
+		34581C8FED582640931C5859079255C7 /* warningIconSubtle.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = warningIconSubtle.png; path = SwiftMessages/Resources/warningIconSubtle.png; sourceTree = "<group>"; };
+		3805954D1481CACCCC1FC0FD41D3C787 /* SwiftMessages-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftMessages-Info.plist"; sourceTree = "<group>"; };
 		391D4EF791BC05C6A8FD447BC6FDF816 /* Pods-Vintage Muse Studio.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Vintage Muse Studio.modulemap"; sourceTree = "<group>"; };
-		434AC7E862E677FE285AA14404A76A5A /* SwiftyGif-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyGif-prefix.pch"; sourceTree = "<group>"; };
-		498A419029269A2B3F1A9516698669DA /* SwiftyGifManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyGifManager.swift; path = SwiftyGif/SwiftyGifManager.swift; sourceTree = "<group>"; };
-		4C212D7FC2A0DC6301076388CF132D05 /* NSImageView+SwiftyGif.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSImageView+SwiftyGif.swift"; path = "SwiftyGif/NSImageView+SwiftyGif.swift"; sourceTree = "<group>"; };
-		4F6F772805253D38FD3B9178D6B01701 /* SwiftyGif.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftyGif.h; path = SwiftyGif/SwiftyGif.h; sourceTree = "<group>"; };
-		7AD67EFB9A7864151301DC2890207AA2 /* SwiftyGif.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyGif.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D26FC95B55925ACABFA26F602BD5EA2 /* errorIcon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = errorIcon.png; path = SwiftMessages/Resources/errorIcon.png; sourceTree = "<group>"; };
+		3E71C38F96597F4D768DEA3098769084 /* errorIconSubtle@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "errorIconSubtle@2x.png"; path = "SwiftMessages/Resources/errorIconSubtle@2x.png"; sourceTree = "<group>"; };
+		473EF1AFA2E5A38AFCA05BE35101BBA8 /* HapticMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HapticMessage.swift; path = SwiftMessages/HapticMessage.swift; sourceTree = "<group>"; };
+		4824F23D80FF9070A5F8A452DB11EB9A /* SwiftMessages */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftMessages; path = SwiftMessages.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BF17D8B372544D206F8F436E439B875 /* successIconLight.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = successIconLight.png; path = SwiftMessages/Resources/successIconLight.png; sourceTree = "<group>"; };
+		556F825DA1AE00E8FD20887D39B05078 /* UIWindow+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIWindow+Extensions.swift"; path = "SwiftMessages/UIWindow+Extensions.swift"; sourceTree = "<group>"; };
+		59D341EB33A63E4F30A4B5AA6F4277BD /* NSLayoutConstraint+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLayoutConstraint+Extensions.swift"; path = "SwiftMessages/NSLayoutConstraint+Extensions.swift"; sourceTree = "<group>"; };
+		5B15229AA04C071F75C371A5188DB50D /* NSImageView+SwiftyGif.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSImageView+SwiftyGif.swift"; path = "SwiftyGif/NSImageView+SwiftyGif.swift"; sourceTree = "<group>"; };
+		5BE136E27A9693AE0CDB3941CB5B6F7B /* Identifiable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identifiable.swift; path = SwiftMessages/Identifiable.swift; sourceTree = "<group>"; };
+		5D33CC4A2EC85B0944B9F68B474547C7 /* SwiftMessages.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftMessages.swift; path = SwiftMessages/SwiftMessages.swift; sourceTree = "<group>"; };
+		613A3FEC70BA3A562340D6224D96A69D /* WindowViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WindowViewController.swift; path = SwiftMessages/WindowViewController.swift; sourceTree = "<group>"; };
+		643B1B6DBD5798D69CBBE6F56F3D1BA1 /* infoIconSubtle@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "infoIconSubtle@2x.png"; path = "SwiftMessages/Resources/infoIconSubtle@2x.png"; sourceTree = "<group>"; };
+		677FC6C6315085B6AC3DEE1AE717C810 /* BaseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseView.swift; path = SwiftMessages/BaseView.swift; sourceTree = "<group>"; };
+		685AFF8F0D8CC714424434FAFB5FF031 /* warningIconLight.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = warningIconLight.png; path = SwiftMessages/Resources/warningIconLight.png; sourceTree = "<group>"; };
+		6CE6FEFD1FF586685A82229688C8C448 /* warningIcon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "warningIcon@3x.png"; path = "SwiftMessages/Resources/warningIcon@3x.png"; sourceTree = "<group>"; };
+		719E4F9EFC363A0B567AE09EFCA3566C /* SwiftMessages-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftMessages-umbrella.h"; sourceTree = "<group>"; };
+		740D0B050EDC7AACB8B402E400D27641 /* PassthroughWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PassthroughWindow.swift; path = SwiftMessages/PassthroughWindow.swift; sourceTree = "<group>"; };
+		741291A834820A06E8587299425ED6A4 /* StatusLine.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = StatusLine.xib; path = SwiftMessages/Resources/StatusLine.xib; sourceTree = "<group>"; };
+		753DD909979478A0C1B33E0524504EF1 /* SwiftMessages-SwiftMessages */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "SwiftMessages-SwiftMessages"; path = SwiftMessages.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		77AE2E896065FB1E4F9A2E62D8050C85 /* UIEdgeInsets+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIEdgeInsets+Extensions.swift"; path = "SwiftMessages/UIEdgeInsets+Extensions.swift"; sourceTree = "<group>"; };
+		787C5FA7E7B46CD0CE5DD3BBE70D7A38 /* errorIcon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "errorIcon@2x.png"; path = "SwiftMessages/Resources/errorIcon@2x.png"; sourceTree = "<group>"; };
+		796FA6766897E8906242A79682905F1A /* MessageGeometryProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageGeometryProxy.swift; path = SwiftMessages/MessageGeometryProxy.swift; sourceTree = "<group>"; };
+		7AD67EFB9A7864151301DC2890207AA2 /* SwiftyGif */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyGif; path = SwiftyGif.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B28E42AF7CF057DF18A1916CFBD5965 /* UIImageView+SwiftyGif.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+SwiftyGif.swift"; path = "SwiftyGif/UIImageView+SwiftyGif.swift"; sourceTree = "<group>"; };
+		7BE240DAD21323BBD187EFD0EF52D26C /* MarginAdjustable+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MarginAdjustable+Extensions.swift"; path = "SwiftMessages/MarginAdjustable+Extensions.swift"; sourceTree = "<group>"; };
 		7D2E86E033911726C9F0B5991F9F6B3F /* Pods-Vintage Muse Studio-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Vintage Muse Studio-dummy.m"; sourceTree = "<group>"; };
 		7DB5557D51DE9D9633764EC93B5D2D51 /* Pods-Vintage Muse Studio-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Vintage Muse Studio-frameworks.sh"; sourceTree = "<group>"; };
-		7FA7CD205A76F14B75E562683A7347B8 /* SwiftyGif-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyGif-Info.plist"; sourceTree = "<group>"; };
-		86A58262904F5EF3EF28B4CE8AADAA5C /* NSImage+SwiftyGif.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSImage+SwiftyGif.swift"; path = "SwiftyGif/NSImage+SwiftyGif.swift"; sourceTree = "<group>"; };
+		7E07FD5A70B5A89557E0AB8FD97360AB /* successIconSubtle@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "successIconSubtle@3x.png"; path = "SwiftMessages/Resources/successIconSubtle@3x.png"; sourceTree = "<group>"; };
+		8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		820489E1CB13F8D7A3D0FAED96192DD0 /* successIconLight@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "successIconLight@2x.png"; path = "SwiftMessages/Resources/successIconLight@2x.png"; sourceTree = "<group>"; };
+		824B921B99C829CA34FAE8BBC72CB6CC /* errorIconLight@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "errorIconLight@2x.png"; path = "SwiftMessages/Resources/errorIconLight@2x.png"; sourceTree = "<group>"; };
+		85C3D3F100C15879200E2A8F6B8E712D /* infoIcon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "infoIcon@2x.png"; path = "SwiftMessages/Resources/infoIcon@2x.png"; sourceTree = "<group>"; };
 		8864C2E643D322983DA328B625AA80BB /* Pods-Vintage Muse Studio-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Vintage Muse Studio-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8942206ECD4B21B933743311DF24C8E9 /* warningIconLight@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "warningIconLight@3x.png"; path = "SwiftMessages/Resources/warningIconLight@3x.png"; sourceTree = "<group>"; };
+		8C545C971F98745B1593976E400C60F2 /* SwiftyGif.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyGif.debug.xcconfig; sourceTree = "<group>"; };
 		8F81ADEDBAF47D59C2B29442BF95E82D /* Pods-Vintage Muse Studio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Vintage Muse Studio.debug.xcconfig"; sourceTree = "<group>"; };
-		902B65D993B7FA72CA3FAB1ED2AC4101 /* ResourceBundle-SwiftyGif-SwiftyGif-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SwiftyGif-SwiftyGif-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93EB3AF39F0437FEAA8CCE4705E49661 /* Weak.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Weak.swift; path = SwiftMessages/Weak.swift; sourceTree = "<group>"; };
+		95BD0A3FDD7F8389E9A41C6E3E2A16F1 /* SwiftMessages.Config+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftMessages.Config+Extensions.swift"; path = "SwiftMessages/SwiftMessages.Config+Extensions.swift"; sourceTree = "<group>"; };
+		99316B210C831BD34DB0BD3655A72A6E /* TopBottomAnimationStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TopBottomAnimationStyle.swift; path = SwiftMessages/TopBottomAnimationStyle.swift; sourceTree = "<group>"; };
+		996D8D334117D846A76DAE2E7C6B2E82 /* successIcon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "successIcon@3x.png"; path = "SwiftMessages/Resources/successIcon@3x.png"; sourceTree = "<group>"; };
+		9B014E062EF3DF6B590B477ED8A4125D /* CornerRoundingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CornerRoundingView.swift; path = SwiftMessages/CornerRoundingView.swift; sourceTree = "<group>"; };
+		9B13EB8BB831BEBC06E0309E345AD7C5 /* SwiftyGif.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyGif.release.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9D950C9D761C01CF24667907BAE33569 /* Pods-Vintage Muse Studio-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Vintage Muse Studio-acknowledgements.plist"; sourceTree = "<group>"; };
-		AE22B8A6B950B0F58966CCA3DDF1EFB4 /* UIImage+SwiftyGif.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+SwiftyGif.swift"; path = "SwiftyGif/UIImage+SwiftyGif.swift"; sourceTree = "<group>"; };
-		B15C1FCF35738937CD215F8532323B0F /* ObjcAssociatedWeakObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjcAssociatedWeakObject.swift; path = SwiftyGif/ObjcAssociatedWeakObject.swift; sourceTree = "<group>"; };
-		B81A043A179AEAA591C4C0CE9304AC6B /* SwiftyGif-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyGif-dummy.m"; sourceTree = "<group>"; };
-		BC95A7132B292D873124EC5498F115D1 /* SwiftyGif-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyGif-umbrella.h"; sourceTree = "<group>"; };
-		D1793E948E08B08C36A2BE22514CAD54 /* Pods_Vintage_Muse_Studio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vintage_Muse_Studio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E1E1D45CA552D276CE65737420C73E2 /* successIconSubtle@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "successIconSubtle@2x.png"; path = "SwiftMessages/Resources/successIconSubtle@2x.png"; sourceTree = "<group>"; };
+		A0D72FF12FEB0DFBE1038ADDF81499F2 /* SwiftyGifManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyGifManager.swift; path = SwiftyGif/SwiftyGifManager.swift; sourceTree = "<group>"; };
+		A4A7F3A31F9CFB9B3517E1DBCD4F79C2 /* SwiftMessages-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftMessages-prefix.pch"; sourceTree = "<group>"; };
+		A7B61E6C2444BC2B4D658BC058549C74 /* TabView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = TabView.xib; path = SwiftMessages/Resources/TabView.xib; sourceTree = "<group>"; };
+		ABA5E6921E5EB44F809E3868B4EB0535 /* infoIcon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = infoIcon.png; path = SwiftMessages/Resources/infoIcon.png; sourceTree = "<group>"; };
+		AC80913CB14C07FC058D5985B24FC9FB /* MarginAdjustable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MarginAdjustable.swift; path = SwiftMessages/MarginAdjustable.swift; sourceTree = "<group>"; };
+		AC864457AD7A71C89237520D141DF714 /* SwiftyGif-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyGif-umbrella.h"; sourceTree = "<group>"; };
+		B295CE59FD6BB41A0357935B2C2477BD /* SwiftMessageModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftMessageModifier.swift; path = SwiftMessages/SwiftMessageModifier.swift; sourceTree = "<group>"; };
+		B3BCD9FB43513F065B30706B62A82655 /* SwiftMessagesHideAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftMessagesHideAction.swift; path = SwiftMessages/SwiftMessagesHideAction.swift; sourceTree = "<group>"; };
+		B5D08C16A11A6925678A10AEF571849C /* TopBottomAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TopBottomAnimation.swift; path = SwiftMessages/TopBottomAnimation.swift; sourceTree = "<group>"; };
+		B61DB639058770927AD33DAE4CD18CDD /* SwiftMessages-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftMessages-dummy.m"; sourceTree = "<group>"; };
+		B664133F2042DBC1B08B61F482B615BA /* warningIconSubtle@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "warningIconSubtle@3x.png"; path = "SwiftMessages/Resources/warningIconSubtle@3x.png"; sourceTree = "<group>"; };
+		B735C2D09448DD37AF58C54870B71B00 /* SwiftMessages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftMessages.release.xcconfig; sourceTree = "<group>"; };
+		B89D4BB747A29937E2911EB2D3715F59 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = SwiftMessages/Error.swift; sourceTree = "<group>"; };
+		BBA76C49967940CAF6D785C33B5A1E9B /* errorIconLight@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "errorIconLight@3x.png"; path = "SwiftMessages/Resources/errorIconLight@3x.png"; sourceTree = "<group>"; };
+		BDDEE0E053D49FE84B2B3301E627BE3A /* SwiftyGif.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyGif.modulemap; sourceTree = "<group>"; };
+		BE7A17078DD54B8274772886305C4B66 /* warningIcon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = warningIcon.png; path = SwiftMessages/Resources/warningIcon.png; sourceTree = "<group>"; };
+		BED1959278B4F5E47FC74E16FFE7ED2A /* ResourceBundle-SwiftMessages-SwiftMessages-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SwiftMessages-SwiftMessages-Info.plist"; sourceTree = "<group>"; };
+		BF1B85A0C33043C70740DA9B98B5303E /* successIconSubtle.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = successIconSubtle.png; path = SwiftMessages/Resources/successIconSubtle.png; sourceTree = "<group>"; };
+		C05DF8A37FBF9A7CBE97A65B56EBE2DD /* ObjcAssociatedWeakObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjcAssociatedWeakObject.swift; path = SwiftyGif/ObjcAssociatedWeakObject.swift; sourceTree = "<group>"; };
+		C15C0F38A4830988B0701AC2EF4B93BC /* PhysicsPanHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhysicsPanHandler.swift; path = SwiftMessages/PhysicsPanHandler.swift; sourceTree = "<group>"; };
+		C219547C2EB01CFCE2DA31B63BE62932 /* AccessibleMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AccessibleMessage.swift; path = SwiftMessages/AccessibleMessage.swift; sourceTree = "<group>"; };
+		C372D2156D3949362471C8D785AE5C46 /* infoIconLight@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "infoIconLight@2x.png"; path = "SwiftMessages/Resources/infoIconLight@2x.png"; sourceTree = "<group>"; };
+		C45030BF79AFB5E509B88103AAFD43B5 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Extensions.swift"; path = "SwiftMessages/UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		C479D2427ED4D92249155CBA11DF99BB /* UIImage+SwiftyGif.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+SwiftyGif.swift"; path = "SwiftyGif/UIImage+SwiftyGif.swift"; sourceTree = "<group>"; };
+		C65B7F29BD1836005824168ADAF76A50 /* Task+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Task+Extensions.swift"; path = "SwiftMessages/Task+Extensions.swift"; sourceTree = "<group>"; };
+		CAC0483044C9CD2692C5F47DD4789433 /* MessageHostingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageHostingView.swift; path = SwiftMessages/MessageHostingView.swift; sourceTree = "<group>"; };
+		CBABC245CFF2FD6DEB0378776C9C06C3 /* SwiftyGif-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyGif-dummy.m"; sourceTree = "<group>"; };
+		CBB95ADED33DC757E955E89B3DD7B8A0 /* WindowScene.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WindowScene.swift; path = SwiftMessages/WindowScene.swift; sourceTree = "<group>"; };
+		CE3B73A64978815D955590444C06CCD5 /* MessageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageView.swift; path = SwiftMessages/MessageView.swift; sourceTree = "<group>"; };
+		D1793E948E08B08C36A2BE22514CAD54 /* Pods-Vintage Muse Studio */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Vintage Muse Studio"; path = Pods_Vintage_Muse_Studio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2039C478CD444C75449E74D453CE26F /* SwiftMessagesSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftMessagesSegue.swift; path = SwiftMessages/SwiftMessagesSegue.swift; sourceTree = "<group>"; };
 		D3A2291F6E4A99FE4BDA43A704B96578 /* Pods-Vintage Muse Studio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Vintage Muse Studio.release.xcconfig"; sourceTree = "<group>"; };
+		D429C8A61534FDCC5792408AD5476AAB /* BackgroundViewable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BackgroundViewable.swift; path = SwiftMessages/BackgroundViewable.swift; sourceTree = "<group>"; };
+		D615922E10F3A588579266B8ECCA632F /* SwiftMessages.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftMessages.modulemap; sourceTree = "<group>"; };
 		D63A07657126995DA6F639E62BFE7F17 /* Pods-Vintage Muse Studio-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Vintage Muse Studio-umbrella.h"; sourceTree = "<group>"; };
+		D7BD52FDCB7458FC55F5EAC03159B141 /* successIcon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = successIcon.png; path = SwiftMessages/Resources/successIcon.png; sourceTree = "<group>"; };
 		DB4644AE2426B0020E54D656FBF12F0C /* Pods-Vintage Muse Studio-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Vintage Muse Studio-Info.plist"; sourceTree = "<group>"; };
-		DCE91A4B8FFC56A4B22A7335F97C1326 /* SwiftyGif.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyGif.debug.xcconfig; sourceTree = "<group>"; };
+		DCD11E999AED2472361E23D2E8863B12 /* MaskingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaskingView.swift; path = SwiftMessages/MaskingView.swift; sourceTree = "<group>"; };
+		DF4299EC91003767D008B6F69E22BC5C /* NSBundle+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSBundle+Extensions.swift"; path = "SwiftMessages/NSBundle+Extensions.swift"; sourceTree = "<group>"; };
+		E61035DB82323FD076336562171E2C4C /* ResourceBundle-SwiftyGif-SwiftyGif-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SwiftyGif-SwiftyGif-Info.plist"; sourceTree = "<group>"; };
+		E83C0B965A3309027270A1D5266C8AFA /* infoIconSubtle.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = infoIconSubtle.png; path = SwiftMessages/Resources/infoIconSubtle.png; sourceTree = "<group>"; };
+		EBC3D4945B35E90A9C98E53A9F367E36 /* TopBottomPresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TopBottomPresentable.swift; path = SwiftMessages/TopBottomPresentable.swift; sourceTree = "<group>"; };
+		ECF4CA3AF5536D14B4E015504E7AEEC0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		EEF92F1677B99B5AFF63B75F844038CA /* CALayer+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CALayer+Extensions.swift"; path = "SwiftMessages/CALayer+Extensions.swift"; sourceTree = "<group>"; };
+		EF5B96636C33FC2B35368F26FBC75F26 /* NSImage+SwiftyGif.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSImage+SwiftyGif.swift"; path = "SwiftyGif/NSImage+SwiftyGif.swift"; sourceTree = "<group>"; };
+		F20D8E546C0FC721878AA6A89436C61D /* infoIconLight.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = infoIconLight.png; path = SwiftMessages/Resources/infoIconLight.png; sourceTree = "<group>"; };
+		F4858CE67F4503FB62B633F57C50376B /* errorIconSubtle.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = errorIconSubtle.png; path = SwiftMessages/Resources/errorIconSubtle.png; sourceTree = "<group>"; };
+		F5A7345CD3DBA379C66DA815F3D84DA4 /* infoIcon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "infoIcon@3x.png"; path = "SwiftMessages/Resources/infoIcon@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		64FD1CF3D689934139C690C5F37AE9A7 /* Frameworks */ = {
+		0D1D24E57508AFCD3C3CC186AB949E91 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC908C9A26F3C8CF4B4C848F4B97E1BB /* Foundation.framework in Frameworks */,
+				01BB07B05EEC9B39EF758376B6C476EC /* Foundation.framework in Frameworks */,
+				EC90441B7E4272E47823835C80C3C3D7 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8F301497DB66D0B9D552A74EFA06841 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,32 +291,128 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EA2A21ADFC42D84AB0ACE96CAFC83943 /* Frameworks */ = {
+		EA7AE9B39671AC1C8BAD6EE391432EAA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED772E7CD9015E7BC0FB50D05F68D362 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11E99F4924666EA2BCB9B935CD259DDB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		427E0339D72DCF08F73362AAF2BBC2A6 /* Resources */ = {
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				36D20D7F9B5F1584044B1759C855D9F6 /* PrivacyInfo.xcprivacy */,
+				1DE6440B6853131A80C53DDA34375AAB /* iOS */,
 			);
-			name = Resources;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		460FAB31718BA92693FA98EFD88E558E /* Products */ = {
+		1AA9C896FE21613478CD578BE2604946 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D1793E948E08B08C36A2BE22514CAD54 /* Pods_Vintage_Muse_Studio.framework */,
-				7AD67EFB9A7864151301DC2890207AA2 /* SwiftyGif.framework */,
-				0A37DE9A55F6CEA1AF18BDEF878BF1F5 /* SwiftyGif.bundle */,
+				E61035DB82323FD076336562171E2C4C /* ResourceBundle-SwiftyGif-SwiftyGif-Info.plist */,
+				BDDEE0E053D49FE84B2B3301E627BE3A /* SwiftyGif.modulemap */,
+				CBABC245CFF2FD6DEB0378776C9C06C3 /* SwiftyGif-dummy.m */,
+				2FF1BB4224A157FC185F8E5F7AD96060 /* SwiftyGif-Info.plist */,
+				02155834E6EB536D938699FA9A693373 /* SwiftyGif-prefix.pch */,
+				AC864457AD7A71C89237520D141DF714 /* SwiftyGif-umbrella.h */,
+				8C545C971F98745B1593976E400C60F2 /* SwiftyGif.debug.xcconfig */,
+				9B13EB8BB831BEBC06E0309E345AD7C5 /* SwiftyGif.release.xcconfig */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyGif";
+			sourceTree = "<group>";
+		};
+		1DE6440B6853131A80C53DDA34375AAB /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */,
+				ECF4CA3AF5536D14B4E015504E7AEEC0 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		284A42556BB3B90FBC3C473AE73CEE49 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69A19896A888C9A835E8D4032C83D746 /* SwiftMessages */,
+				F42B02CF4F8DBA953A701AFB46F72564 /* SwiftyGif */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3686185F8B7A98723BB822A88DCD985D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BED1959278B4F5E47FC74E16FFE7ED2A /* ResourceBundle-SwiftMessages-SwiftMessages-Info.plist */,
+				D615922E10F3A588579266B8ECCA632F /* SwiftMessages.modulemap */,
+				B61DB639058770927AD33DAE4CD18CDD /* SwiftMessages-dummy.m */,
+				3805954D1481CACCCC1FC0FD41D3C787 /* SwiftMessages-Info.plist */,
+				A4A7F3A31F9CFB9B3517E1DBCD4F79C2 /* SwiftMessages-prefix.pch */,
+				719E4F9EFC363A0B567AE09EFCA3566C /* SwiftMessages-umbrella.h */,
+				019BCB19FE2371E222B69D6D894AF233 /* SwiftMessages.debug.xcconfig */,
+				B735C2D09448DD37AF58C54870B71B00 /* SwiftMessages.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftMessages";
+			sourceTree = "<group>";
+		};
+		47F831721754FDC46757E18740287A3A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C219547C2EB01CFCE2DA31B63BE62932 /* AccessibleMessage.swift */,
+				0F3C9A6372061769D81A73C0C7FAA38C /* Animator.swift */,
+				D429C8A61534FDCC5792408AD5476AAB /* BackgroundViewable.swift */,
+				677FC6C6315085B6AC3DEE1AE717C810 /* BaseView.swift */,
+				EEF92F1677B99B5AFF63B75F844038CA /* CALayer+Extensions.swift */,
+				9B014E062EF3DF6B590B477ED8A4125D /* CornerRoundingView.swift */,
+				B89D4BB747A29937E2911EB2D3715F59 /* Error.swift */,
+				473EF1AFA2E5A38AFCA05BE35101BBA8 /* HapticMessage.swift */,
+				5BE136E27A9693AE0CDB3941CB5B6F7B /* Identifiable.swift */,
+				03FF304B78FB2887EEA69B43A3EF73EE /* KeyboardTrackingView.swift */,
+				AC80913CB14C07FC058D5985B24FC9FB /* MarginAdjustable.swift */,
+				7BE240DAD21323BBD187EFD0EF52D26C /* MarginAdjustable+Extensions.swift */,
+				DCD11E999AED2472361E23D2E8863B12 /* MaskingView.swift */,
+				796FA6766897E8906242A79682905F1A /* MessageGeometryProxy.swift */,
+				CAC0483044C9CD2692C5F47DD4789433 /* MessageHostingView.swift */,
+				CE3B73A64978815D955590444C06CCD5 /* MessageView.swift */,
+				0F36B93F4C055762CE7F6665385A4EAD /* MessageViewConvertible.swift */,
+				DF4299EC91003767D008B6F69E22BC5C /* NSBundle+Extensions.swift */,
+				59D341EB33A63E4F30A4B5AA6F4277BD /* NSLayoutConstraint+Extensions.swift */,
+				0273B3D5720A784FEC51EF375A54D538 /* PassthroughView.swift */,
+				740D0B050EDC7AACB8B402E400D27641 /* PassthroughWindow.swift */,
+				322BEFC09DE269C13508A4E39E7E4787 /* PhysicsAnimation.swift */,
+				C15C0F38A4830988B0701AC2EF4B93BC /* PhysicsPanHandler.swift */,
+				16A998C1D73206815934177C52109917 /* Presenter.swift */,
+				B295CE59FD6BB41A0357935B2C2477BD /* SwiftMessageModifier.swift */,
+				5D33CC4A2EC85B0944B9F68B474547C7 /* SwiftMessages.swift */,
+				95BD0A3FDD7F8389E9A41C6E3E2A16F1 /* SwiftMessages.Config+Extensions.swift */,
+				B3BCD9FB43513F065B30706B62A82655 /* SwiftMessagesHideAction.swift */,
+				D2039C478CD444C75449E74D453CE26F /* SwiftMessagesSegue.swift */,
+				C65B7F29BD1836005824168ADAF76A50 /* Task+Extensions.swift */,
+				1173E493672273B68739D6F7ADE9BCB8 /* Theme.swift */,
+				B5D08C16A11A6925678A10AEF571849C /* TopBottomAnimation.swift */,
+				99316B210C831BD34DB0BD3655A72A6E /* TopBottomAnimationStyle.swift */,
+				EBC3D4945B35E90A9C98E53A9F367E36 /* TopBottomPresentable.swift */,
+				77AE2E896065FB1E4F9A2E62D8050C85 /* UIEdgeInsets+Extensions.swift */,
+				C45030BF79AFB5E509B88103AAFD43B5 /* UIViewController+Extensions.swift */,
+				556F825DA1AE00E8FD20887D39B05078 /* UIWindow+Extensions.swift */,
+				93EB3AF39F0437FEAA8CCE4705E49661 /* Weak.swift */,
+				CBB95ADED33DC757E955E89B3DD7B8A0 /* WindowScene.swift */,
+				613A3FEC70BA3A562340D6224D96A69D /* WindowViewController.swift */,
+				A42DF0D5E028FEA7685D9A82A0ECAD64 /* Resources */,
+			);
+			name = App;
 			sourceTree = "<group>";
 		};
 		49EEC3BA43733FC904709AF8BD62BE2D /* Targets Support Files */ = {
@@ -127,28 +423,82 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		4C333003C69FDAB10463160D29BD663A /* Pods */ = {
+		69A19896A888C9A835E8D4032C83D746 /* SwiftMessages */ = {
 			isa = PBXGroup;
 			children = (
-				516B8C726E7CB8367CFB6EDD78632810 /* SwiftyGif */,
+				47F831721754FDC46757E18740287A3A /* App */,
+				3686185F8B7A98723BB822A88DCD985D /* Support Files */,
 			);
-			name = Pods;
+			name = SwiftMessages;
+			path = SwiftMessages;
 			sourceTree = "<group>";
 		};
-		516B8C726E7CB8367CFB6EDD78632810 /* SwiftyGif */ = {
+		6A0601DB6644ABBA81E5E34F15DC7279 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				86A58262904F5EF3EF28B4CE8AADAA5C /* NSImage+SwiftyGif.swift */,
-				4C212D7FC2A0DC6301076388CF132D05 /* NSImageView+SwiftyGif.swift */,
-				B15C1FCF35738937CD215F8532323B0F /* ObjcAssociatedWeakObject.swift */,
-				4F6F772805253D38FD3B9178D6B01701 /* SwiftyGif.h */,
-				498A419029269A2B3F1A9516698669DA /* SwiftyGifManager.swift */,
-				AE22B8A6B950B0F58966CCA3DDF1EFB4 /* UIImage+SwiftyGif.swift */,
-				0E826DAD5C574D49073D431A95A52C55 /* UIImageView+SwiftyGif.swift */,
-				427E0339D72DCF08F73362AAF2BBC2A6 /* Resources */,
-				CE720D6E5716EB0ED4317B5E37FF592F /* Support Files */,
+				D1793E948E08B08C36A2BE22514CAD54 /* Pods-Vintage Muse Studio */,
+				4824F23D80FF9070A5F8A452DB11EB9A /* SwiftMessages */,
+				753DD909979478A0C1B33E0524504EF1 /* SwiftMessages-SwiftMessages */,
+				7AD67EFB9A7864151301DC2890207AA2 /* SwiftyGif */,
+				0A37DE9A55F6CEA1AF18BDEF878BF1F5 /* SwiftyGif-SwiftyGif */,
 			);
-			path = SwiftyGif;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71B14A335023A0D9528CECE9794414B4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3380483A99BD8BE1DC7B7704F9121EC3 /* PrivacyInfo.xcprivacy */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A42DF0D5E028FEA7685D9A82A0ECAD64 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				09C3DC18340021AC9640A85F775B4836 /* CardView.xib */,
+				270889664B4E7DA067D979DC52AED57D /* CenteredView.xib */,
+				3D26FC95B55925ACABFA26F602BD5EA2 /* errorIcon.png */,
+				787C5FA7E7B46CD0CE5DD3BBE70D7A38 /* errorIcon@2x.png */,
+				28EDC623FA0B1E842BE8933C6E4AF777 /* errorIcon@3x.png */,
+				25C96E89D5F47E8131A5A217C88A2EEF /* errorIconLight.png */,
+				824B921B99C829CA34FAE8BBC72CB6CC /* errorIconLight@2x.png */,
+				BBA76C49967940CAF6D785C33B5A1E9B /* errorIconLight@3x.png */,
+				F4858CE67F4503FB62B633F57C50376B /* errorIconSubtle.png */,
+				3E71C38F96597F4D768DEA3098769084 /* errorIconSubtle@2x.png */,
+				0C043144845BED20AA26E80F98FED2D0 /* errorIconSubtle@3x.png */,
+				ABA5E6921E5EB44F809E3868B4EB0535 /* infoIcon.png */,
+				85C3D3F100C15879200E2A8F6B8E712D /* infoIcon@2x.png */,
+				F5A7345CD3DBA379C66DA815F3D84DA4 /* infoIcon@3x.png */,
+				F20D8E546C0FC721878AA6A89436C61D /* infoIconLight.png */,
+				C372D2156D3949362471C8D785AE5C46 /* infoIconLight@2x.png */,
+				11BA4545CCCBBBB5A09BB4C97A7D0FC8 /* infoIconLight@3x.png */,
+				E83C0B965A3309027270A1D5266C8AFA /* infoIconSubtle.png */,
+				643B1B6DBD5798D69CBBE6F56F3D1BA1 /* infoIconSubtle@2x.png */,
+				2475A31E8B47F9EEA677953C74CAEEBC /* infoIconSubtle@3x.png */,
+				2E0DDB6EC5D99A7C0EBB9598F2CB35EE /* MessageView.xib */,
+				741291A834820A06E8587299425ED6A4 /* StatusLine.xib */,
+				D7BD52FDCB7458FC55F5EAC03159B141 /* successIcon.png */,
+				0EBB3C0A063376C8F851744231E2A9B3 /* successIcon@2x.png */,
+				996D8D334117D846A76DAE2E7C6B2E82 /* successIcon@3x.png */,
+				4BF17D8B372544D206F8F436E439B875 /* successIconLight.png */,
+				820489E1CB13F8D7A3D0FAED96192DD0 /* successIconLight@2x.png */,
+				09E36AFCE14306AB856531AE9EC2EA9C /* successIconLight@3x.png */,
+				BF1B85A0C33043C70740DA9B98B5303E /* successIconSubtle.png */,
+				9E1E1D45CA552D276CE65737420C73E2 /* successIconSubtle@2x.png */,
+				7E07FD5A70B5A89557E0AB8FD97360AB /* successIconSubtle@3x.png */,
+				A7B61E6C2444BC2B4D658BC058549C74 /* TabView.xib */,
+				BE7A17078DD54B8274772886305C4B66 /* warningIcon.png */,
+				059BD4F45DE579E7A119FDFAA8986BE0 /* warningIcon@2x.png */,
+				6CE6FEFD1FF586685A82229688C8C448 /* warningIcon@3x.png */,
+				685AFF8F0D8CC714424434FAFB5FF031 /* warningIconLight.png */,
+				33E53FDBB7EBD54229F0F9A1A367EF35 /* warningIconLight@2x.png */,
+				8942206ECD4B21B933743311DF24C8E9 /* warningIconLight@3x.png */,
+				34581C8FED582640931C5859079255C7 /* warningIconSubtle.png */,
+				1062F6BC5D5652D0CCD5C7C6BF95E006 /* warningIconSubtle@2x.png */,
+				B664133F2042DBC1B08B61F482B615BA /* warningIconSubtle@3x.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		C2C20CB47D72B7DC63CF0EA6F054D261 /* Pods-Vintage Muse Studio */ = {
@@ -168,57 +518,42 @@
 			path = "Target Support Files/Pods-Vintage Muse Studio";
 			sourceTree = "<group>";
 		};
-		CE720D6E5716EB0ED4317B5E37FF592F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				902B65D993B7FA72CA3FAB1ED2AC4101 /* ResourceBundle-SwiftyGif-SwiftyGif-Info.plist */,
-				35D457472BA4D8FF31511446ECA7018C /* SwiftyGif.modulemap */,
-				B81A043A179AEAA591C4C0CE9304AC6B /* SwiftyGif-dummy.m */,
-				7FA7CD205A76F14B75E562683A7347B8 /* SwiftyGif-Info.plist */,
-				434AC7E862E677FE285AA14404A76A5A /* SwiftyGif-prefix.pch */,
-				BC95A7132B292D873124EC5498F115D1 /* SwiftyGif-umbrella.h */,
-				DCE91A4B8FFC56A4B22A7335F97C1326 /* SwiftyGif.debug.xcconfig */,
-				34093780EFED0B839E8EF963D8F85403 /* SwiftyGif.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftyGif";
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				4C333003C69FDAB10463160D29BD663A /* Pods */,
-				460FAB31718BA92693FA98EFD88E558E /* Products */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				284A42556BB3B90FBC3C473AE73CEE49 /* Pods */,
+				6A0601DB6644ABBA81E5E34F15DC7279 /* Products */,
 				49EEC3BA43733FC904709AF8BD62BE2D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		F42B02CF4F8DBA953A701AFB46F72564 /* SwiftyGif */ = {
 			isa = PBXGroup;
 			children = (
-				E4801F62A6B08CD9B5410329F1A18FDE /* iOS */,
+				EF5B96636C33FC2B35368F26FBC75F26 /* NSImage+SwiftyGif.swift */,
+				5B15229AA04C071F75C371A5188DB50D /* NSImageView+SwiftyGif.swift */,
+				C05DF8A37FBF9A7CBE97A65B56EBE2DD /* ObjcAssociatedWeakObject.swift */,
+				2DEB69A266822AB5A7919068EDD76701 /* SwiftyGif.h */,
+				A0D72FF12FEB0DFBE1038ADDF81499F2 /* SwiftyGifManager.swift */,
+				C479D2427ED4D92249155CBA11DF99BB /* UIImage+SwiftyGif.swift */,
+				7B28E42AF7CF057DF18A1916CFBD5965 /* UIImageView+SwiftyGif.swift */,
+				71B14A335023A0D9528CECE9794414B4 /* Resources */,
+				1AA9C896FE21613478CD578BE2604946 /* Support Files */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */,
-			);
-			name = iOS;
+			name = SwiftyGif;
+			path = SwiftyGif;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		66CD2599E7333352F296457C5CAD6263 /* Headers */ = {
+		201719F225AE9E8DC15C3D3F538C4E1B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FA6BAA0F5B077305B5C5FB6F2BD2886 /* Pods-Vintage Muse Studio-umbrella.h in Headers */,
+				396476ABD6A88B36454BFB75187F2CEB /* Pods-Vintage Muse Studio-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +563,14 @@
 			files = (
 				A4659B725777EB2731C4F056A59BE83D /* SwiftyGif.h in Headers */,
 				21522E8BAAE97772E92F3943202B758C /* SwiftyGif-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE74DA29FE4C43145B8B9EB3EDE7417A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06BA2E2D825572F38EBB22253A0B979F /* SwiftMessages-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,20 +589,20 @@
 			buildRules = (
 			);
 			dependencies = (
-				89B52E636D7F6ECEBC67C680D7D19DC1 /* PBXTargetDependency */,
+				03491E1FB086F47FCDFA004ED2FF82BF /* PBXTargetDependency */,
 			);
 			name = SwiftyGif;
 			productName = SwiftyGif;
-			productReference = 7AD67EFB9A7864151301DC2890207AA2 /* SwiftyGif.framework */;
+			productReference = 7AD67EFB9A7864151301DC2890207AA2 /* SwiftyGif */;
 			productType = "com.apple.product-type.framework";
 		};
 		176E48377247D5011E906CB1A39E71BA /* SwiftyGif-SwiftyGif */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ECEB3CD03DF9C8BDCA17F5A08BB07E73 /* Build configuration list for PBXNativeTarget "SwiftyGif-SwiftyGif" */;
+			buildConfigurationList = 2A094281BF9C6705586FFFE4F4C07998 /* Build configuration list for PBXNativeTarget "SwiftyGif-SwiftyGif" */;
 			buildPhases = (
-				8D5D106211D3AD81C265334F1C8EB9EE /* Sources */,
-				EA2A21ADFC42D84AB0ACE96CAFC83943 /* Frameworks */,
-				A7CA42DE64CA5464BF7154C9186D52EC /* Resources */,
+				D48929EC80C0402AFA756BE44E1CDC8D /* Sources */,
+				A8F301497DB66D0B9D552A74EFA06841 /* Frameworks */,
+				359CD7B139868D69B45BA52E6AF4BB50 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -267,26 +610,63 @@
 			);
 			name = "SwiftyGif-SwiftyGif";
 			productName = SwiftyGif;
-			productReference = 0A37DE9A55F6CEA1AF18BDEF878BF1F5 /* SwiftyGif.bundle */;
+			productReference = 0A37DE9A55F6CEA1AF18BDEF878BF1F5 /* SwiftyGif-SwiftyGif */;
 			productType = "com.apple.product-type.bundle";
 		};
-		FD70D5A4D879001F07386C2B2CCE46F2 /* Pods-Vintage Muse Studio */ = {
+		93789445511E3FEAB3D09A6F552EEE2D /* SwiftMessages-SwiftMessages */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 67CBEBCC6D57A5A858A10949CCB2A5A6 /* Build configuration list for PBXNativeTarget "Pods-Vintage Muse Studio" */;
+			buildConfigurationList = 36D257D62F225CF5C755DC7837ECDF94 /* Build configuration list for PBXNativeTarget "SwiftMessages-SwiftMessages" */;
 			buildPhases = (
-				66CD2599E7333352F296457C5CAD6263 /* Headers */,
-				FADB6B410DD2DE203B6B9C573ACBB640 /* Sources */,
-				64FD1CF3D689934139C690C5F37AE9A7 /* Frameworks */,
-				40CDD6F0D373D35202777DC2D502A091 /* Resources */,
+				EC629DCA9087D4432039B639FE1F0530 /* Sources */,
+				EA7AE9B39671AC1C8BAD6EE391432EAA /* Frameworks */,
+				9801D18E0BCC70745D47916F3981A6F1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9C6D8B62147EE50355B8BAD1A79E6779 /* PBXTargetDependency */,
+			);
+			name = "SwiftMessages-SwiftMessages";
+			productName = SwiftMessages;
+			productReference = 753DD909979478A0C1B33E0524504EF1 /* SwiftMessages-SwiftMessages */;
+			productType = "com.apple.product-type.bundle";
+		};
+		DAB613A18652334F6BFC5F27BADF515D /* SwiftMessages */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB6C9AF990D5151955BBB250DAADF9FC /* Build configuration list for PBXNativeTarget "SwiftMessages" */;
+			buildPhases = (
+				EE74DA29FE4C43145B8B9EB3EDE7417A /* Headers */,
+				A3185C89FA6D543143A94070C0FE260E /* Sources */,
+				0D1D24E57508AFCD3C3CC186AB949E91 /* Frameworks */,
+				1CDC032AF82E666728F02496491DF93C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E953324D11739AF7CD2D741719BE0F6A /* PBXTargetDependency */,
+			);
+			name = SwiftMessages;
+			productName = SwiftMessages;
+			productReference = 4824F23D80FF9070A5F8A452DB11EB9A /* SwiftMessages */;
+			productType = "com.apple.product-type.framework";
+		};
+		FD70D5A4D879001F07386C2B2CCE46F2 /* Pods-Vintage Muse Studio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1DC05FC8ABF62D9169E0F994C6B71DE /* Build configuration list for PBXNativeTarget "Pods-Vintage Muse Studio" */;
+			buildPhases = (
+				201719F225AE9E8DC15C3D3F538C4E1B /* Headers */,
+				AF4F0CF98899EE3622DF48F56EE80313 /* Sources */,
+				ED772E7CD9015E7BC0FB50D05F68D362 /* Frameworks */,
+				3641DA70A03345BDEAE83BBF4BF676AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0CE9F3C667E807101EB5936623A3E097 /* PBXTargetDependency */,
+				2C33DFA36A02E337AC57057078357799 /* PBXTargetDependency */,
 			);
 			name = "Pods-Vintage Muse Studio";
 			productName = Pods_Vintage_Muse_Studio;
-			productReference = D1793E948E08B08C36A2BE22514CAD54 /* Pods_Vintage_Muse_Studio.framework */;
+			productReference = D1793E948E08B08C36A2BE22514CAD54 /* Pods-Vintage Muse Studio */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -307,11 +687,15 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 460FAB31718BA92693FA98EFD88E558E /* Products */;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6A0601DB6644ABBA81E5E34F15DC7279 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				FD70D5A4D879001F07386C2B2CCE46F2 /* Pods-Vintage Muse Studio */,
+				DAB613A18652334F6BFC5F27BADF515D /* SwiftMessages */,
+				93789445511E3FEAB3D09A6F552EEE2D /* SwiftMessages-SwiftMessages */,
 				15AEBAFA43912F898FC2E1A73025C946 /* SwiftyGif */,
 				176E48377247D5011E906CB1A39E71BA /* SwiftyGif-SwiftyGif */,
 			);
@@ -323,22 +707,78 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F41CA210E56B3043EDD75C851FB4061B /* SwiftyGif.bundle in Resources */,
+				F41CA210E56B3043EDD75C851FB4061B /* SwiftyGif-SwiftyGif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		40CDD6F0D373D35202777DC2D502A091 /* Resources */ = {
+		1CDC032AF82E666728F02496491DF93C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CA8C87965AD4DECE642BE230F2CA28E /* SwiftMessages-SwiftMessages in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		359CD7B139868D69B45BA52E6AF4BB50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FE45D0F9A4E1272A7E26B0369B6ECE1 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3641DA70A03345BDEAE83BBF4BF676AB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A7CA42DE64CA5464BF7154C9186D52EC /* Resources */ = {
+		9801D18E0BCC70745D47916F3981A6F1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0277B4DF47A8413385B09EC6BFBFD821 /* PrivacyInfo.xcprivacy in Resources */,
+				469B23924311CD64958A584C88613055 /* CardView.xib in Resources */,
+				A086B064165E7AB8AE012BF063688DF5 /* CenteredView.xib in Resources */,
+				6DB519F92160E36F59C207DAE4052699 /* errorIcon.png in Resources */,
+				4C43D3B59A0B58EDDE2620EEEA49CC55 /* errorIcon@2x.png in Resources */,
+				C82BE31B642A1FD9E1FC12CDC6806354 /* errorIcon@3x.png in Resources */,
+				649C97B5FF3C329FC5577FB65BB3D72F /* errorIconLight.png in Resources */,
+				7F7B426002EF1D0F664466AFAE6E9A7B /* errorIconLight@2x.png in Resources */,
+				0FC19D57FD3A5502638CC9A2BD78F808 /* errorIconLight@3x.png in Resources */,
+				7BFD462FFABFDF7E31A2B6A37CB83BA5 /* errorIconSubtle.png in Resources */,
+				1EFE4704002D12F55080679BCDB9A7EA /* errorIconSubtle@2x.png in Resources */,
+				0FBEA463D09632D1801735D8459F0E67 /* errorIconSubtle@3x.png in Resources */,
+				39200C0C522827ED94BC66AF2510BD07 /* infoIcon.png in Resources */,
+				5630FEBC55B184AAC58EF386A896B749 /* infoIcon@2x.png in Resources */,
+				97F06EC9CCEA5AD5A9785F67FEF2D28A /* infoIcon@3x.png in Resources */,
+				53CADF45EA290246B125DB13A58A60B7 /* infoIconLight.png in Resources */,
+				79AC62C9135622E025354E2505EA2573 /* infoIconLight@2x.png in Resources */,
+				882EB80B3F0E455F03BF5235FB9B7FCF /* infoIconLight@3x.png in Resources */,
+				45624DD886962A972EDDA3B49D41B8B6 /* infoIconSubtle.png in Resources */,
+				69C68EFC5E245B0FDD49F284BFE8CD25 /* infoIconSubtle@2x.png in Resources */,
+				ADB23C53C60CE91AA3320DF32F47E5BF /* infoIconSubtle@3x.png in Resources */,
+				331F3DC3BCF4B5368602A0F5165912AA /* MessageView.xib in Resources */,
+				870492923EA080DFF20EE971C5A8B79E /* StatusLine.xib in Resources */,
+				2EB4C1821BCB3FFDCC0BED4D218DF7D9 /* successIcon.png in Resources */,
+				E5837D8F815F8B8F81AB3428DD27140C /* successIcon@2x.png in Resources */,
+				5AD722F911FC944619CD09A5F9350645 /* successIcon@3x.png in Resources */,
+				68C64A64C51584233D163A088788B52A /* successIconLight.png in Resources */,
+				364E89785D155601C5FF763DACBB3CC2 /* successIconLight@2x.png in Resources */,
+				1B76747CC341A49520A5979F19E1A34F /* successIconLight@3x.png in Resources */,
+				B83E3437DD0D0C34DFB3E4F1C73EDBF0 /* successIconSubtle.png in Resources */,
+				0639835EA8A4936187EFCB52F1723BF2 /* successIconSubtle@2x.png in Resources */,
+				82C28B47209BD30A939E5A8588A515FD /* successIconSubtle@3x.png in Resources */,
+				705952F1916FE6AD26D1B086A69C25EE /* TabView.xib in Resources */,
+				580DB52AED21848F8315A1F4E4BDCFBD /* warningIcon.png in Resources */,
+				73F34435AD4AC005402A745DB737D48F /* warningIcon@2x.png in Resources */,
+				A5789601AF7EA77F6B60E91AFCB655BA /* warningIcon@3x.png in Resources */,
+				5B0C549F86E1E6B21A579BBAF40A6A17 /* warningIconLight.png in Resources */,
+				047AF9FFC883924930EF7C90D1D80C69 /* warningIconLight@2x.png in Resources */,
+				A2CECE358FE5AA01EB3098285AFD1F56 /* warningIconLight@3x.png in Resources */,
+				906A92572EC622242F492DDEACFBBE07 /* warningIconSubtle.png in Resources */,
+				F9B51AA4C58F13386E86A36A9D3C3762 /* warningIconSubtle@2x.png in Resources */,
+				ADC74D07E8B0E625116DAD8D8E6B4AF3 /* warningIconSubtle@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,40 +799,219 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8D5D106211D3AD81C265334F1C8EB9EE /* Sources */ = {
+		A3185C89FA6D543143A94070C0FE260E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E99C7FFCAFA045A6CFDFFE2B881597E /* AccessibleMessage.swift in Sources */,
+				45024175A5927B5FFE3256B9385E6197 /* Animator.swift in Sources */,
+				758AC96F47C03D7988E48E183E4E2740 /* BackgroundViewable.swift in Sources */,
+				31E90A063CEB408AE83BAE3809C5B386 /* BaseView.swift in Sources */,
+				1D2E46BDCB115733447065A3636FE866 /* CALayer+Extensions.swift in Sources */,
+				E22CEF4E660703F8EDF447747B210C69 /* CornerRoundingView.swift in Sources */,
+				44108836B43DCE0DD8495F8C1DDEAC72 /* Error.swift in Sources */,
+				34CBE9ECAF6DFF53EAB165C5EAAD7A10 /* HapticMessage.swift in Sources */,
+				A51558103E0E778B8CB118E2B052805C /* Identifiable.swift in Sources */,
+				04C20BBE9A50AE27E0921930B03FEE30 /* KeyboardTrackingView.swift in Sources */,
+				397B143C4CF3F45C43BE4E788EE8F211 /* MarginAdjustable.swift in Sources */,
+				49122DDE2FB70552AFD9B388204A798D /* MarginAdjustable+Extensions.swift in Sources */,
+				6822947598A19C0C2A4093C6F9F80F69 /* MaskingView.swift in Sources */,
+				33F65190AE430461BEF5CAAD54483FD5 /* MessageGeometryProxy.swift in Sources */,
+				FA78B4A449A5A811B2DB9D0618C76353 /* MessageHostingView.swift in Sources */,
+				302E71229689227ED183D465D75F58C5 /* MessageView.swift in Sources */,
+				7FF1C43B1595A1D15C0A70CED6257B16 /* MessageViewConvertible.swift in Sources */,
+				DEE74AE99865A3A3DE242F37497D16D3 /* NSBundle+Extensions.swift in Sources */,
+				0FC9C58F87D03F8CDE5AB079C1DD0213 /* NSLayoutConstraint+Extensions.swift in Sources */,
+				AA9627A1AACD43AFE2B77FED5318F7DB /* PassthroughView.swift in Sources */,
+				8D59FE1A96373EA64228D3E84049757F /* PassthroughWindow.swift in Sources */,
+				3E886BFC002E3947673FEDA3451D6F86 /* PhysicsAnimation.swift in Sources */,
+				29BF075E733C0DC5F7C33F51D38A0F56 /* PhysicsPanHandler.swift in Sources */,
+				1812F8B843BD735B9DF751BD5A5785DE /* Presenter.swift in Sources */,
+				FA9C54C15301EDED7FB34B879B905D55 /* SwiftMessageModifier.swift in Sources */,
+				E1B21BB1B19111F3D81D0C90C45BF272 /* SwiftMessages.swift in Sources */,
+				1584E1A442001E6A1D8D86A768274BF1 /* SwiftMessages-dummy.m in Sources */,
+				306722CB2D12112BFDAF2A763D6C9E86 /* SwiftMessages.Config+Extensions.swift in Sources */,
+				268E803AB07D4212E963979D1B76809A /* SwiftMessagesHideAction.swift in Sources */,
+				B1F5B390417C6C5064AC5A1AE42A409A /* SwiftMessagesSegue.swift in Sources */,
+				4270955B71197EF9294A397E0404DBCD /* Task+Extensions.swift in Sources */,
+				CA7298ECE5DB16604F50E5202A155560 /* Theme.swift in Sources */,
+				CFDA0B4410B8AD610C29B52599EC3498 /* TopBottomAnimation.swift in Sources */,
+				B0B5DB6A2BA8CD379EA52694491B3A0D /* TopBottomAnimationStyle.swift in Sources */,
+				F3E595C6B35FBE5BE1F7CAD86210186A /* TopBottomPresentable.swift in Sources */,
+				2B792C407028E5BAED835328B44BDC08 /* UIEdgeInsets+Extensions.swift in Sources */,
+				033397553E82DCE05EEAF16E5C6D1BAF /* UIViewController+Extensions.swift in Sources */,
+				4D77F3CF371BE21B7485E343D998DCE1 /* UIWindow+Extensions.swift in Sources */,
+				0AF6193D3270DD4A81C8A79322F6637A /* Weak.swift in Sources */,
+				E65DE0B2E0FDD9C454B3699820873C69 /* WindowScene.swift in Sources */,
+				10F93A767082F8F6A1923036A34AE676 /* WindowViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF4F0CF98899EE3622DF48F56EE80313 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B54D5055E974B9070E089D0B0D30B681 /* Pods-Vintage Muse Studio-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D48929EC80C0402AFA756BE44E1CDC8D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FADB6B410DD2DE203B6B9C573ACBB640 /* Sources */ = {
+		EC629DCA9087D4432039B639FE1F0530 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1AFDD57F2807AC2B77AAE433832660E /* Pods-Vintage Muse Studio-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		89B52E636D7F6ECEBC67C680D7D19DC1 /* PBXTargetDependency */ = {
+		03491E1FB086F47FCDFA004ED2FF82BF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "SwiftyGif-SwiftyGif";
 			target = 176E48377247D5011E906CB1A39E71BA /* SwiftyGif-SwiftyGif */;
-			targetProxy = FAB29805E9C7628E4C16B6D3C0107047 /* PBXContainerItemProxy */;
+			targetProxy = 34B09668FAE07DA7F722C897FD57770D /* PBXContainerItemProxy */;
 		};
-		9C6D8B62147EE50355B8BAD1A79E6779 /* PBXTargetDependency */ = {
+		0CE9F3C667E807101EB5936623A3E097 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftMessages;
+			target = DAB613A18652334F6BFC5F27BADF515D /* SwiftMessages */;
+			targetProxy = 983A1F31E4D3971DECBF2D9847B681BD /* PBXContainerItemProxy */;
+		};
+		2C33DFA36A02E337AC57057078357799 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftyGif;
 			target = 15AEBAFA43912F898FC2E1A73025C946 /* SwiftyGif */;
-			targetProxy = C8DACF1418A1924D2B4184AD89292F24 /* PBXContainerItemProxy */;
+			targetProxy = 938DDD357CF4BCF408D1B84256DBE8EE /* PBXContainerItemProxy */;
+		};
+		E953324D11739AF7CD2D741719BE0F6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftMessages-SwiftMessages";
+			target = 93789445511E3FEAB3D09A6F552EEE2D /* SwiftMessages-SwiftMessages */;
+			targetProxy = 43FE250FF317D5C4C5C55CE7621913E1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1D9154F0450DA0B2A9E2D3137815C989 /* Release */ = {
+		07509D612B65322863A07C81C041D142 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 019BCB19FE2371E222B69D6D894AF233 /* SwiftMessages.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftMessages/SwiftMessages-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/SwiftMessages/SwiftMessages-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftMessages/SwiftMessages.modulemap";
+				PRODUCT_MODULE_NAME = SwiftMessages;
+				PRODUCT_NAME = SwiftMessages;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		161389C126467448A2B613F0AA353FCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B735C2D09448DD37AF58C54870B71B00 /* SwiftMessages.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SwiftMessages";
+				IBSC_MODULE = SwiftMessages;
+				INFOPLIST_FILE = "Target Support Files/SwiftMessages/ResourceBundle-SwiftMessages-SwiftMessages-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = SwiftMessages;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		16C7833C9F5AD7C3591C63733F9B6688 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C545C971F98745B1593976E400C60F2 /* SwiftyGif.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SwiftyGif";
+				IBSC_MODULE = SwiftyGif;
+				INFOPLIST_FILE = "Target Support Files/SwiftyGif/ResourceBundle-SwiftyGif-SwiftyGif-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = SwiftyGif;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		2A4BC382E1C8BD6FCC22765FC430B24E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B13EB8BB831BEBC06E0309E345AD7C5 /* SwiftyGif.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyGif/SwiftyGif-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/SwiftyGif/SwiftyGif-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyGif/SwiftyGif.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyGif;
+				PRODUCT_NAME = SwiftyGif;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2F08934EFFEA5B16B8FFCFE470D58CBB /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D3A2291F6E4A99FE4BDA43A704B96578 /* Pods-Vintage Muse Studio.release.xcconfig */;
 			buildSettings = {
@@ -432,10 +1051,11 @@
 			};
 			name = Release;
 		};
-		2A4BC382E1C8BD6FCC22765FC430B24E /* Release */ = {
+		3E4146C70E6795DA9162D2961CFB69A7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34093780EFED0B839E8EF963D8F85403 /* SwiftyGif.release.xcconfig */;
+			baseConfigurationReference = B735C2D09448DD37AF58C54870B71B00 /* SwiftMessages.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -446,19 +1066,19 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyGif/SwiftyGif-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftMessages/SwiftMessages-prefix.pch";
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/SwiftyGif/SwiftyGif-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/SwiftMessages/SwiftMessages-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/SwiftyGif/SwiftyGif.modulemap";
-				PRODUCT_MODULE_NAME = SwiftyGif;
-				PRODUCT_NAME = SwiftyGif;
+				MODULEMAP_FILE = "Target Support Files/SwiftMessages/SwiftMessages.modulemap";
+				PRODUCT_MODULE_NAME = SwiftMessages;
+				PRODUCT_NAME = SwiftMessages;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -468,6 +1088,62 @@
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		52A093EBF65C0AA48A3C4F06F0516A4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F81ADEDBAF47D59C2B29442BF95E82D /* Pods-Vintage Muse Studio.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-Vintage Muse Studio/Pods-Vintage Muse Studio-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Vintage Muse Studio/Pods-Vintage Muse Studio.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		85519C7831C449188EE48D362C032CD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B13EB8BB831BEBC06E0309E345AD7C5 /* SwiftyGif.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SwiftyGif";
+				IBSC_MODULE = SwiftyGif;
+				INFOPLIST_FILE = "Target Support Files/SwiftyGif/ResourceBundle-SwiftyGif-SwiftyGif-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = SwiftyGif;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -599,72 +1275,16 @@
 			};
 			name = Release;
 		};
-		B6469E94E87E7507F841E5015B71F6D1 /* Debug */ = {
+		B84E7CB1E98FD6A545EBE429A9BF738B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F81ADEDBAF47D59C2B29442BF95E82D /* Pods-Vintage Muse Studio.debug.xcconfig */;
+			baseConfigurationReference = 019BCB19FE2371E222B69D6D894AF233 /* SwiftMessages.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-Vintage Muse Studio/Pods-Vintage Muse Studio-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SwiftMessages";
+				IBSC_MODULE = SwiftMessages;
+				INFOPLIST_FILE = "Target Support Files/SwiftMessages/ResourceBundle-SwiftMessages-SwiftMessages-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Vintage Muse Studio/Pods-Vintage Muse Studio.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		BF5D8F5EDFD7EC69F4B2A7C1C1D4E832 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34093780EFED0B839E8EF963D8F85403 /* SwiftyGif.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGNING_ALLOWED = NO;
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SwiftyGif";
-				IBSC_MODULE = SwiftyGif;
-				INFOPLIST_FILE = "Target Support Files/SwiftyGif/ResourceBundle-SwiftyGif-SwiftyGif-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = SwiftyGif;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		D8A9C5C8C916A23763E255F7B1B5A01B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DCE91A4B8FFC56A4B22A7335F97C1326 /* SwiftyGif.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGNING_ALLOWED = NO;
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SwiftyGif";
-				IBSC_MODULE = SwiftyGif;
-				INFOPLIST_FILE = "Target Support Files/SwiftyGif/ResourceBundle-SwiftyGif-SwiftyGif-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = SwiftyGif;
+				PRODUCT_NAME = SwiftMessages;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -674,7 +1294,7 @@
 		};
 		F3A4D0E0A6B59FA8CF27B4FD7E57CF84 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DCE91A4B8FFC56A4B22A7335F97C1326 /* SwiftyGif.debug.xcconfig */;
+			baseConfigurationReference = 8C545C971F98745B1593976E400C60F2 /* SwiftyGif.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -713,20 +1333,29 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2A094281BF9C6705586FFFE4F4C07998 /* Build configuration list for PBXNativeTarget "SwiftyGif-SwiftyGif" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16C7833C9F5AD7C3591C63733F9B6688 /* Debug */,
+				85519C7831C449188EE48D362C032CD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36D257D62F225CF5C755DC7837ECDF94 /* Build configuration list for PBXNativeTarget "SwiftMessages-SwiftMessages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B84E7CB1E98FD6A545EBE429A9BF738B /* Debug */,
+				161389C126467448A2B613F0AA353FCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
 				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		67CBEBCC6D57A5A858A10949CCB2A5A6 /* Build configuration list for PBXNativeTarget "Pods-Vintage Muse Studio" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B6469E94E87E7507F841E5015B71F6D1 /* Debug */,
-				1D9154F0450DA0B2A9E2D3137815C989 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -740,11 +1369,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ECEB3CD03DF9C8BDCA17F5A08BB07E73 /* Build configuration list for PBXNativeTarget "SwiftyGif-SwiftyGif" */ = {
+		EB6C9AF990D5151955BBB250DAADF9FC /* Build configuration list for PBXNativeTarget "SwiftMessages" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D8A9C5C8C916A23763E255F7B1B5A01B /* Debug */,
-				BF5D8F5EDFD7EC69F4B2A7C1C1D4E832 /* Release */,
+				07509D612B65322863A07C81C041D142 /* Debug */,
+				3E4146C70E6795DA9162D2961CFB69A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1DC05FC8ABF62D9169E0F994C6B71DE /* Build configuration list for PBXNativeTarget "Pods-Vintage Muse Studio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52A093EBF65C0AA48A3C4F06F0516A4D /* Debug */,
+				2F08934EFFEA5B16B8FFCFE470D58CBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

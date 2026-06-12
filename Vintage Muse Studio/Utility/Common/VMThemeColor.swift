@@ -11,6 +11,10 @@ import UIKit
 struct VMThemeColor {
     
     static let descriptionTextColor = "descriptionTextColor"
+    static let headingTextColor = "headingTextColor"
+    static let bgColor = "bgColor"
+    static let greenBgColor = "greenBgColor"
+    static let redAlertColor = "redAlertColor"
     
     struct AppMainThemeColor {
         

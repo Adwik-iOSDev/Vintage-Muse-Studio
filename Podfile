@@ -4,5 +4,6 @@ target 'Vintage Muse Studio' do
   use_frameworks!
 
   pod 'SwiftyGif'
+  pod 'SwiftMessages'
 
 end
