@@ -24,6 +24,10 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Delegate
+        emailAddressTxtField.delegate = self
+        passwordTxtField.delegate = self
+        
         initialUIchanges()
         
     }
@@ -70,6 +74,10 @@ extension LoginViewController {
     private func initialUIchanges() {
         
         view.backgroundColor = .bg
+        
+        emailAddressTxtField.keyboardType = .emailAddress
+        emailAddressTxtField.returnKeyType = .next
+        passwordTxtField.returnKeyType = .done
         passwordTxtField.isSecureTextEntry = true
         
         guard let borderColor = UIColor(named: VMThemeColor.descriptionTextColor) else { return }
@@ -110,6 +118,8 @@ extension LoginViewController {
         
         registerVC.goBackToLoginVC = {
             self.scrollView.contentOffset.y = 0
+            self.emailAddressTxtField.text = ""
+            self.passwordTxtField.text = ""
         }
         
         registerVC.modalTransitionStyle = .crossDissolve
@@ -127,17 +137,19 @@ extension LoginViewController {
         }
         
         guard Common.isValidEmail(email) else {
+            emailAddressTxtField.text = ""
             CustomAlertView.showCustomErrorMessage(titleMsg: "Please enter a valid email address")
             return
         }
         
         
         guard password.count >= 6 else {
+            passwordTxtField.text = ""
             CustomAlertView.showCustomErrorMessage(titleMsg: "Password must contain atleast 6 characters")
             return
         }
         
-        CustomAlertView.showCustomSuccessMessage(titleMsg: "Registration success")
+        CustomAlertView.showCustomSuccessMessage(titleMsg: "Login success")
         
         
         
@@ -157,6 +169,23 @@ extension LoginViewController {
     private func forgotPasswordCall() {
         
         print("Forgot password called")
+        
+    }
+    
+    
+}
+
+
+extension LoginViewController: UITextFieldDelegate {
+    
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        if textField == emailAddressTxtField {
+            passwordTxtField.becomeFirstResponder()
+        }else{
+            textField.resignFirstResponder()
+        }
         
     }
     
