@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SwiftMessages
 
 class LoginViewController: UIViewController {
 
@@ -57,7 +56,14 @@ class LoginViewController: UIViewController {
     
     @IBAction func didForgotPasswordButtonTapped(_ sender: UIButton) {
         
-        forgotPasswordCall()
+        guard let email = emailAddressTxtField.text else { return }
+        
+        guard Common.isValidEmail(email) else {
+            CustomAlertView.showCustomErrorMessage(titleMsg: "Please enter a valid email address")
+            return
+        }
+        
+        UserAuthentication.shared.forgotPasswordCall(email: email)
         
     }
     
@@ -79,6 +85,12 @@ extension LoginViewController {
         emailAddressTxtField.returnKeyType = .next
         passwordTxtField.returnKeyType = .done
         passwordTxtField.isSecureTextEntry = true
+        
+        //Test Purpose - Start
+//        emailAddressTxtField.text = "adwiksajeev@gmail.com"
+//        passwordTxtField.text = "adwikvvv"
+        //Test Purpose - End
+        
         
         guard let borderColor = UIColor(named: VMThemeColor.descriptionTextColor) else { return }
         authViews.applyBorder(color: borderColor, alpha: 0.5 ,borderWidth: 1, cornerRadius: 10)
@@ -149,11 +161,31 @@ extension LoginViewController {
             return
         }
         
-        CustomAlertView.showCustomSuccessMessage(titleMsg: "Login success")
-        
+        //Logging in users
+        UserAuthentication.shared.loginUserFireBaseCall(email: email, password: password) { loginSuccess in
+            
+            if loginSuccess {
+                
+                let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+                let homeVc = storyBoard.instantiateViewController(withIdentifier: "HomeViewController")as! HomeViewController
+                
+                homeVc.modalTransitionStyle = .crossDissolve
+                homeVc.modalPresentationStyle = .fullScreen
+                self.present(homeVc, animated: true)
+            }else{
+                
+                print("Stay in the same page")
+                
+            }
+            
+        }
         
         
     }
+    
+    
+    
+    
     
     
     private func togglePasswordTextVisibility(button: UIButton) {
@@ -162,13 +194,6 @@ extension LoginViewController {
         
         let image = passwordTxtField.isSecureTextEntry ? "eye.slash" : "eye"
         button.setImage(UIImage(systemName: image), for: .normal)
-        
-    }
-    
-    
-    private func forgotPasswordCall() {
-        
-        print("Forgot password called")
         
     }
     

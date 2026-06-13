@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class RegisterViewController: UIViewController {
     
     
@@ -14,6 +15,12 @@ class RegisterViewController: UIViewController {
     
     //View
     @IBOutlet var authViews: [UIView]!
+    @IBOutlet weak var verifyAccontView: UIView!
+    @IBOutlet weak var createAccontView: UIView!
+    
+    //HeightConstraint
+    @IBOutlet weak var verifyAccontViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var createAccontViewHeightConstraint: NSLayoutConstraint!
     
     //Textfield
     @IBOutlet weak var fullNameTxtField: UITextField!
@@ -44,9 +51,16 @@ class RegisterViewController: UIViewController {
         
     }
     
+    @IBAction func didVerifyAccountButtonTapped(_ sender: UIButton) {
+        
+        verifyAccountCallForCreatingNewAccountPurpose()
+        
+    }
+    
+    
     @IBAction func didCreateAccountButtonTapped(_ sender: UIButton) {
         
-        createAccountCall()
+        createAccountCallForLoginPurpose()
         
     }
     
@@ -76,7 +90,13 @@ extension RegisterViewController {
         
         view.backgroundColor = .bg
         
+        fullNameTxtField.delegate = self
+        emailAddressTxtField.delegate = self
+        passwordTxtField.delegate = self
+        confirmPasswordTxtField.delegate = self
+        
         fullNameTxtField.autocapitalizationType = .words
+        fullNameTxtField.returnKeyType = .next
         
         emailAddressTxtField.keyboardType = .emailAddress
         emailAddressTxtField.returnKeyType = .next
@@ -86,6 +106,29 @@ extension RegisterViewController {
         
         confirmPasswordTxtField.returnKeyType = .done
         confirmPasswordTxtField.isSecureTextEntry = true
+        
+        
+        //Button view hidden
+        
+         let userAccountExist = UserAuthentication.shared.isUserAccountCreated()
+        
+        if userAccountExist{
+            
+            hideVerifyAccountView()
+
+        }else{
+            
+            hideCreateAccontView()
+            
+        }
+        
+        
+        //Test Purpose - Start
+//        fullNameTxtField.text = "Adwik V V"
+//        emailAddressTxtField.text = "adwiksajeev@gmail.com"
+//        passwordTxtField.text = "adwikvvv"
+//        confirmPasswordTxtField.text = "adwikvvv"
+        //Test Purpose - End
         
         guard let borderColor = UIColor(named: VMThemeColor.descriptionTextColor) else { return }
         authViews.applyBorder(color: borderColor, alpha: 0.5 ,borderWidth: 1, cornerRadius: 10)
@@ -128,8 +171,7 @@ extension RegisterViewController {
 extension RegisterViewController {
     
     
-    private func createAccountCall() {
-        
+    private func validateInputs() -> (email: String, password: String)? {
         
         guard
             let fullName = fullNameTxtField.text ,
@@ -137,38 +179,104 @@ extension RegisterViewController {
             let password = passwordTxtField.text,
             let confirmPassword = confirmPasswordTxtField.text
                 
-        else { return }
+        else { return nil }
         
         guard !fullName.isEmpty else {
             CustomAlertView.showCustomErrorMessage(titleMsg: "Please enter your name")
-            return
+            return nil
         }
         
         
         guard Common.isValidEmail(email) else {
             emailAddressTxtField.text = ""
             CustomAlertView.showCustomErrorMessage(titleMsg: "Please enter a valid email address")
-            return
+            return nil
         }
         
         
         guard password.count >= 6 else {
             passwordTxtField.text = ""
             CustomAlertView.showCustomErrorMessage(titleMsg: "Password must contain atleast 6 characters")
-            return
+            return nil
         }
         
         
         guard confirmPassword == password else {
             confirmPasswordTxtField.text = ""
             CustomAlertView.showCustomErrorMessage(titleMsg: "Confirm password doesn't match")
-            return
+            return nil
+        }
+        
+        return (email , password)
+        
+    }
+    
+    
+    private func createAccountCallForLoginPurpose() {
+        
+        guard let credentials = validateInputs() else { return }
+         
+        //Firebase adds new user
+        UserAuthentication.shared.loginUserFireBaseCall(email: credentials.email, password: credentials.password) { loginSuccess in
+            
+            if loginSuccess {
+                
+                let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+                let homeVc = storyBoard.instantiateViewController(withIdentifier: "HomeViewController")as! HomeViewController
+                
+                homeVc.modalTransitionStyle = .crossDissolve
+                homeVc.modalPresentationStyle = .fullScreen
+                self.present(homeVc, animated: true)
+            }else{
+                
+                print("Stay in the same page")
+                
+            }
+            
         }
         
         
-        CustomAlertView.showCustomSuccessMessage(titleMsg: "Registration success")
+    }
+    
+    
+    private func verifyAccountCallForCreatingNewAccountPurpose() {
         
+        guard let credentials = validateInputs() else { return }
         
+        //Firebase verify the new user email
+        UserAuthentication.shared.createAccountFirebaseCall(email: credentials.email, password: credentials.password) { [self] accountCreated in
+            
+            if accountCreated {
+                
+                hideVerifyAccountView()
+                
+            }else{
+                
+                hideCreateAccontView()
+                
+            }
+            
+        }
+        
+    }
+    
+    private func hideVerifyAccountView() {
+        createAccontView.isHidden = false
+        createAccontViewHeightConstraint.constant = 110
+        
+        verifyAccontView.isHidden = true
+        verifyAccontViewHeightConstraint.constant = 0
+    }
+    
+    
+    
+    
+    private func hideCreateAccontView() {
+        createAccontView.isHidden = true
+        createAccontViewHeightConstraint.constant = 0
+        
+        verifyAccontView.isHidden = false
+        verifyAccontViewHeightConstraint.constant = 110
     }
     
     
@@ -180,6 +288,8 @@ extension RegisterViewController {
         button.setImage(UIImage(systemName: image), for: .normal)
         
     }
+    
+    
     
     private func toggleConfirmPasswordTextVisibility(button: UIButton) {
         
@@ -197,6 +307,31 @@ extension RegisterViewController {
 
 extension RegisterViewController: UITextFieldDelegate {
     
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        switch textField {
+            
+        case fullNameTxtField:
+            emailAddressTxtField.becomeFirstResponder()
+            
+        case emailAddressTxtField:
+            passwordTxtField.becomeFirstResponder()
+            
+        case passwordTxtField:
+            confirmPasswordTxtField.becomeFirstResponder()
+            
+        case confirmPasswordTxtField:
+            textField.resignFirstResponder()
+            
+        default:
+            return false
+            
+        }
+        
+        return false
+        
+    }
     
     
 }

@@ -29,7 +29,7 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-		9C6F4CFC2FD8515D001C434C /* Exceptions for "Vintage Muse Studio" folder in "Sources" build phase */ = {
+		9C6F4CFC2FD8515D001C434C /* Exceptions for "Vintage Muse Studio" folder in "Compile Sources" phase from "Vintage Muse Studio" target */ = {
 			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
 			buildPhase = 9C6F4CAD2FD7F982001C434C /* Sources */;
 			membershipExceptions = (
@@ -43,7 +43,7 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				9C6F4CC32FD7F984001C434C /* Exceptions for "Vintage Muse Studio" folder in "Vintage Muse Studio" target */,
-				9C6F4CFC2FD8515D001C434C /* Exceptions for "Vintage Muse Studio" folder in "Sources" build phase */,
+				9C6F4CFC2FD8515D001C434C /* Exceptions for "Vintage Muse Studio" folder in "Compile Sources" phase from "Vintage Muse Studio" target */,
 			);
 			path = "Vintage Muse Studio";
 			sourceTree = "<group>";
@@ -197,9 +197,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Vintage Muse Studio/Pods-Vintage Muse Studio-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Vintage Muse Studio/Pods-Vintage Muse Studio-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

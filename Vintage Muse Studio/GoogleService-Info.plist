@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyBI-XBpNtUaKP-CAOKjRSO4tpiuoM9dWPI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>324742967128</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.adwikvv.Vintage-Muse-Studio</string>
+	<key>PROJECT_ID</key>
+	<string>vintage-muse</string>
+	<key>STORAGE_BUCKET</key>
+	<string>vintage-muse.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:324742967128:ios:8cae57938c8e14e3017f2d</string>
+</dict>
+</plist>
