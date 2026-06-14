@@ -9,16 +9,69 @@ import UIKit
 import FirebaseAuth
 
 class HomeViewController: UIViewController {
+    
+    
+    @IBOutlet weak var titleLbl: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        loadUserData()
         
     }
     
 
     @IBAction func didSignOutButtonTapped(_ sender: UIButton) {
+        
+        callSignOut()
+        
+    }
+    
+
+}
+
+
+//MARK: - Private Functions
+
+extension HomeViewController {
+    
+    
+    func loadUserData() {
+        
+        FireStoreManager.shared.fetchUserData { data in
+            
+            
+            guard let userData = data else {
+                return
+            }
+            
+            DispatchQueue.main.async {
+                
+                let fullName = userData["fullName"] as! String
+                let email = userData["email"] as! String
+                let createdAt = userData["createdAt"]!
+                
+                
+                self.titleLbl.text = "Hi \(fullName), your email id : \(email), Created at ; \(createdAt)"
+                
+            }
+            
+        }
+        
+    }
+    
+    
+}
+
+
+
+//MARK: - Auth Functions
+
+extension HomeViewController {
+    
+    
+    private func callSignOut() {
         
         UserAuthentication.shared.logOutUser { logOutSuccess in
             
@@ -39,5 +92,5 @@ class HomeViewController: UIViewController {
         
     }
     
-
+    
 }

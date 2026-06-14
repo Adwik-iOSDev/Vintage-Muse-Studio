@@ -56,14 +56,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func didForgotPasswordButtonTapped(_ sender: UIButton) {
         
-        guard let email = emailAddressTxtField.text else { return }
-        
-        guard Common.isValidEmail(email) else {
-            CustomAlertView.showCustomErrorMessage(titleMsg: "Please enter a valid email address")
-            return
-        }
-        
-        UserAuthentication.shared.forgotPasswordCall(email: email)
+        forgotPasswordCall()
         
     }
     
@@ -85,6 +78,7 @@ extension LoginViewController {
         emailAddressTxtField.returnKeyType = .next
         passwordTxtField.returnKeyType = .done
         passwordTxtField.isSecureTextEntry = true
+        passwordTxtField.textContentType = .oneTimeCode
         
         //Test Purpose - Start
 //        emailAddressTxtField.text = "adwiksajeev@gmail.com"
@@ -141,6 +135,42 @@ extension LoginViewController {
     }
     
     
+    private func togglePasswordTextVisibility(button: UIButton) {
+        
+        self.passwordTxtField.isSecureTextEntry.toggle()
+        
+        let image = passwordTxtField.isSecureTextEntry ? "eye.slash" : "eye"
+        button.setImage(UIImage(systemName: image), for: .normal)
+        
+    }
+    
+    
+}
+
+
+extension LoginViewController: UITextFieldDelegate {
+    
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        if textField == emailAddressTxtField {
+            passwordTxtField.becomeFirstResponder()
+        }else{
+            textField.resignFirstResponder()
+        }
+        
+    }
+    
+    
+}
+
+
+
+extension LoginViewController {
+    
+    //MARK: - Auth Functions
+    
+    
     private func signInCall() {
         
         
@@ -184,33 +214,18 @@ extension LoginViewController {
     }
     
     
-    
-    
-    
-    
-    private func togglePasswordTextVisibility(button: UIButton) {
+    private func forgotPasswordCall() {
         
-        self.passwordTxtField.isSecureTextEntry.toggle()
         
-        let image = passwordTxtField.isSecureTextEntry ? "eye.slash" : "eye"
-        button.setImage(UIImage(systemName: image), for: .normal)
+        guard let email = emailAddressTxtField.text else { return }
         
-    }
-    
-    
-}
-
-
-extension LoginViewController: UITextFieldDelegate {
-    
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        
-        if textField == emailAddressTxtField {
-            passwordTxtField.becomeFirstResponder()
-        }else{
-            textField.resignFirstResponder()
+        guard Common.isValidEmail(email) else {
+            CustomAlertView.showCustomErrorMessage(titleMsg: "Please enter a valid email address")
+            return
         }
+        
+        UserAuthentication.shared.forgotPasswordCall(email: email)
+        
         
     }
     

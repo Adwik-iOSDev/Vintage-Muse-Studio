@@ -24,7 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let fireBaseAuth = Auth.auth()
         
         
-        if fireBaseAuth.currentUser != nil && fireBaseAuth.currentUser?.isEmailVerified ?? false {
+        if fireBaseAuth.currentUser?.reload() != nil && fireBaseAuth.currentUser?.isEmailVerified ?? false {
             rootVC = storyboard.instantiateViewController(withIdentifier: "HomeViewController")
         }else{
             rootVC = storyboard.instantiateViewController(withIdentifier: "LoginViewController")

@@ -10,10 +10,9 @@ import Foundation
 
 struct Common {
     
+    //MARK: - Functions
     
     //Email Validation
-    
-    
     static func isValidEmail(_ email: String) -> Bool {
         
         let emailRegex = "^[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$"
@@ -23,6 +22,16 @@ struct Common {
         return emailPredicate.evaluate(with: email)
         
     }
+    
+    
+}
+
+
+struct FireStoreCollectionKey {
+    
+    //Fire store Collections
+    static let usersKey = "users"
+    
     
     
 }

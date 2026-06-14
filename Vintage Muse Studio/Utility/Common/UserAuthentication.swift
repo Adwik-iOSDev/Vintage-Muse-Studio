@@ -133,6 +133,7 @@ class UserAuthentication {
     }
     
     
+    //Check if user has created an account
     func isUserAccountCreated() -> Bool {
         
         if fireBaseAuth.currentUser != nil {
@@ -142,5 +143,30 @@ class UserAuthentication {
         }
         
     }
+    
+    
+    
+    //Delete user account
+    func deleteUserAccount() {
+        
+        let userAccount = fireBaseAuth.currentUser
+        
+        userAccount?.delete { error in
+            
+            if let error = error {
+                
+                print(error.localizedDescription)
+                return
+                
+            }
+            
+            print("User account deleted successfully")
+            
+        }
+        
+        print("No user account")
+        
+    }
+    
     
 }

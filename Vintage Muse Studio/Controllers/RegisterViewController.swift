@@ -47,6 +47,8 @@ class RegisterViewController: UIViewController {
     @IBAction func goToLoginVC(_ sender: UIButton) {
         
         goBackToLoginVC?()
+        
+        UserAuthentication.shared.deleteUserAccount()
         dismiss(animated: true)
         
     }
@@ -82,7 +84,7 @@ class RegisterViewController: UIViewController {
 
 
 
-//MARK: - Private Functions
+//MARK: - Initial UI Set - Up
 
 extension RegisterViewController {
     
@@ -103,19 +105,21 @@ extension RegisterViewController {
         
         passwordTxtField.returnKeyType = .next
         passwordTxtField.isSecureTextEntry = true
+        passwordTxtField.textContentType = .oneTimeCode
         
         confirmPasswordTxtField.returnKeyType = .done
         confirmPasswordTxtField.isSecureTextEntry = true
+        confirmPasswordTxtField.textContentType = .oneTimeCode
         
         
         //Button view hidden
         
-         let userAccountExist = UserAuthentication.shared.isUserAccountCreated()
+        let userAccountExist = UserAuthentication.shared.isUserAccountCreated()
         
         if userAccountExist{
             
             hideVerifyAccountView()
-
+            
         }else{
             
             hideCreateAccontView()
@@ -168,10 +172,11 @@ extension RegisterViewController {
 
 
 //MARK: - Private Functions
+
 extension RegisterViewController {
     
     
-    private func validateInputs() -> (email: String, password: String)? {
+    private func validateInputs() -> (email: String, password: String, fullName: String)? {
         
         guard
             let fullName = fullNameTxtField.text ,
@@ -207,58 +212,10 @@ extension RegisterViewController {
             return nil
         }
         
-        return (email , password)
+        return (email , password, fullName)
         
     }
     
-    
-    private func createAccountCallForLoginPurpose() {
-        
-        guard let credentials = validateInputs() else { return }
-         
-        //Firebase adds new user
-        UserAuthentication.shared.loginUserFireBaseCall(email: credentials.email, password: credentials.password) { loginSuccess in
-            
-            if loginSuccess {
-                
-                let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-                let homeVc = storyBoard.instantiateViewController(withIdentifier: "HomeViewController")as! HomeViewController
-                
-                homeVc.modalTransitionStyle = .crossDissolve
-                homeVc.modalPresentationStyle = .fullScreen
-                self.present(homeVc, animated: true)
-            }else{
-                
-                print("Stay in the same page")
-                
-            }
-            
-        }
-        
-        
-    }
-    
-    
-    private func verifyAccountCallForCreatingNewAccountPurpose() {
-        
-        guard let credentials = validateInputs() else { return }
-        
-        //Firebase verify the new user email
-        UserAuthentication.shared.createAccountFirebaseCall(email: credentials.email, password: credentials.password) { [self] accountCreated in
-            
-            if accountCreated {
-                
-                hideVerifyAccountView()
-                
-            }else{
-                
-                hideCreateAccontView()
-                
-            }
-            
-        }
-        
-    }
     
     private func hideVerifyAccountView() {
         createAccontView.isHidden = false
@@ -303,6 +260,72 @@ extension RegisterViewController {
     
 }
 
+
+extension RegisterViewController {
+    
+    //MARK: - Auth Functions
+    
+    
+    private func createAccountCallForLoginPurpose() {
+        
+        guard let credentials = validateInputs() else { return }
+        
+//        Firebase adds new user
+        UserAuthentication.shared.loginUserFireBaseCall(email: credentials.email, password: credentials.password) { loginSuccess in
+            
+            if loginSuccess {
+                
+                FireStoreManager.shared.saveUserData(fullName: credentials.fullName, email: credentials.email) { dataSaved in
+                    
+                    if dataSaved{
+                        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+                        let homeVc = storyBoard.instantiateViewController(withIdentifier: "HomeViewController")as! HomeViewController
+                        
+                        homeVc.modalTransitionStyle = .crossDissolve
+                        homeVc.modalPresentationStyle = .fullScreen
+                        self.present(homeVc, animated: true)
+                    }else{
+                        print("Data saving error")
+                    }
+                    
+                }
+                
+                
+            }else{
+                
+                print("Stay in the same page")
+                
+            }
+            
+        }
+        
+        
+    }
+    
+    
+    private func verifyAccountCallForCreatingNewAccountPurpose() {
+        
+        guard let credentials = validateInputs() else { return }
+        
+        //Firebase verify the new user email
+        UserAuthentication.shared.createAccountFirebaseCall(email: credentials.email, password: credentials.password) { [self] accountCreated in
+            
+            if accountCreated {
+                
+                hideVerifyAccountView()
+                
+            }else{
+                
+                hideCreateAccontView()
+                
+            }
+            
+        }
+        
+    }
+    
+    
+}
 
 
 extension RegisterViewController: UITextFieldDelegate {

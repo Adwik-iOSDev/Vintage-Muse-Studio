@@ -382,7 +382,7 @@
                                                         <rect key="frame" x="20" y="10" width="400" height="60"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="oKO-3j-QSQ">
-                                                                <rect key="frame" x="10" y="15.666666666666664" width="50" height="28.666666666666671"/>
+                                                                <rect key="frame" x="10" y="15.666666666666666" width="50" height="28.666666666666671"/>
                                                                 <color key="tintColor" name="greenBgColor"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="50" id="lfy-c8-1Yc"/>
@@ -810,8 +810,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HomeViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxN-0g-zeP">
-                                <rect key="frame" x="44" y="454" width="352.33333333333331" height="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HomeViewController" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxN-0g-zeP">
+                                <rect key="frame" x="25" y="454" width="390" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -830,12 +830,16 @@
                         <viewLayoutGuide key="safeArea" id="EA9-VZ-g7C"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="gxN-0g-zeP" firstAttribute="leading" secondItem="EA9-VZ-g7C" secondAttribute="leading" constant="25" id="4Yn-Cf-kSH"/>
+                            <constraint firstItem="EA9-VZ-g7C" firstAttribute="trailing" secondItem="gxN-0g-zeP" secondAttribute="trailing" constant="25" id="4c2-yU-SCW"/>
                             <constraint firstItem="AmO-sN-OtF" firstAttribute="top" secondItem="gxN-0g-zeP" secondAttribute="bottom" constant="25" id="Ubq-fv-sUB"/>
                             <constraint firstItem="AmO-sN-OtF" firstAttribute="centerX" secondItem="n9p-vI-tHw" secondAttribute="centerX" id="qZG-B9-bjL"/>
-                            <constraint firstItem="gxN-0g-zeP" firstAttribute="centerX" secondItem="n9p-vI-tHw" secondAttribute="centerX" id="sBm-1t-Mew"/>
                             <constraint firstItem="gxN-0g-zeP" firstAttribute="centerY" secondItem="n9p-vI-tHw" secondAttribute="centerY" id="xY6-Ai-j2W"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titleLbl" destination="gxN-0g-zeP" id="pbl-Xl-Vhy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HJe-9N-b5a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

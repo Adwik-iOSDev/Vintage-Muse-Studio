@@ -7,5 +7,6 @@ target 'Vintage Muse Studio' do
   pod 'SwiftMessages'
   pod 'IQKeyboardManagerSwift'
   pod 'FirebaseAuth'
+  pod 'FirebaseFirestore'
 
 end
